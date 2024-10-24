@@ -1,0 +1,29 @@
+# Example .gitignore file for your config dir.
+# An * ensures that everything will be ignored.
+*
+
+# whitelist filetypes, will not be ignored
+!*.yaml
+!*.py
+!*.sh
+!*.jinja
+!*.json
+!*.conf
+!.gitignore
+!*.md
+
+# whitelist folders, will not be ignored. folder/** means all underlying folders
+!automations/
+!glances/
+!includes/
+!notebooks/
+!zigbee2mqtt/
+
+# Whitelist specific Lovelace files in the .storage directory
+
+# Ensure these YAML files are ignored, otherwise your secret data/credentials will leak.
+html5_push_registrations.conf
+ip_bans.yaml
+known_devices.yaml
+secrets.yaml
+# .storage/ is already ignored from the first line, no need to restate it here

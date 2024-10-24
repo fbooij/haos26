@@ -1,0 +1,40 @@
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+# http:
+#   use_x_forwarded_for: true
+#   trusted_proxies:
+#     - 127.0.0.1
+
+# sensor:
+#   - platform: serial
+#     serial_port: /dev/serial/by-id/usb-FTDI_USB_Serial_Converter_FTB6SPL3-if00-port0
+#     baudrate: 9600  # Adjust this to match your device's baud rate
+
+
+#
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+rest_command: !include includes/rest_commands.yaml
+
+# modbus:
+#   - name: modbus_hub
+#     type: serial
+#     port: /dev/serial/by-id/usb-FTDI_USB_Serial_Converter_FTB6SPL3-if00-port0
+#     baudrate: 9600
+#     bytesize: 8
+#     method: rtu
+#     parity: N
+#     stopbits: 1
+#     switches:
+#       - name: "Test Switch"
+#         slave: 1
+#         address: 35
+#         write_type: holding
+#         command_on: 1
+#         command_off: 0

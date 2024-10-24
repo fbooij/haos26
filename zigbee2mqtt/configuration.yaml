@@ -1,0 +1,98 @@
+homeassistant:
+  legacy_entity_attributes: true
+mqtt:
+  server: mqtt://core-mosquitto:1883
+  user: addons
+  password: thai1abeiM8Apahth5eereez5dooquaa5oojoangeedei9Einiesh1Faijeija6j
+serial:
+  port: /dev/ttyACM0
+  adapter: deconz
+frontend:
+  port: 8099
+ota:
+  ikea_ota_use_test_url: true
+advanced:
+  homeassistant_legacy_entity_attributes: false
+  legacy_api: false
+  legacy_availability_payload: false
+  log_level: info
+device_options:
+  legacy: false
+devices:
+  '0x04cf8cdf3c89f257':
+    friendly_name: tesla
+  '0x04cf8cdf3c89e786':
+    friendly_name: watt
+  '0x54ef4410000fed29':
+    friendly_name: galvani
+  '0x8cf681fffe4de7a0':
+    friendly_name: pascal
+  '0x00158d0002c9cde2':
+    friendly_name: stoletov
+  '0x00158d00031b46fb':
+    friendly_name: carson
+  '0x385b44fffe1a2d1b':
+    friendly_name: ockham
+  '0xe0798dfffed1b802':
+    friendly_name: sonoff zbdongle-e router
+  '0x000d6ffffeaa2be9':
+    friendly_name: volta
+  '0xd0cf5efffeb43eeb':
+    friendly_name: tradfri dimmer
+  '0x04cf8cdf3c8d047f':
+    friendly_name: ohm
+  '0x00158d0002ec0e29':
+    friendly_name: popov
+  '0x00158d0002ec0ccb':
+    friendly_name: schrödinger
+  '0x086bd7fffe0042f0':
+    friendly_name: talbot
+  '0x54ef4410000ff1b9':
+    friendly_name: joule
+  '0x00158d00036bd4e2':
+    friendly_name: lans
+  '0x00158d0002ad8fb6':
+    friendly_name: shima
+  '0x000d6ffffedecccd':
+    friendly_name: farad
+  '0x000d6ffffee80905':
+    friendly_name: sherman
+  '0xdc8e95fffe8e9283':
+    friendly_name: strickland
+  '0x54ef4410004a686c':
+    friendly_name: huberman
+    description: Aqara Roller Shade Driver E1
+  '0x54ef44100060c226':
+    friendly_name: harris
+  '0x54ef44100060ac97':
+    friendly_name: kahneman
+  '0x04cd15fffe81741e':
+    friendly_name: grandin
+  '0x04cd15fffe8171f3':
+    friendly_name: earle
+  '0x000d6ffffe08bb20':
+    friendly_name: farnsworth
+  '0x0c4314fffeec88cd':
+    friendly_name: elmqvist
+  '0xa4c1382bba94809f':
+    friendly_name: MHCOZY TYZG
+  '0x04cf8cdf3c7c21ad':
+    friendly_name: leeuwenhoek
+  '0x086bd7fffe076257':
+    friendly_name: keuken-lux-ikedriver-newton
+  '0xbc33acfffe7428e6':
+    friendly_name: zolder-lux-ikedriver-bacon
+  '0x000b57fffe8f0358':
+    friendly_name: keuken-lux-ikecandle-pasteur
+  '0x000b57fffe950220':
+    friendly_name: keuken-lux-ikecandle-pascal
+  '0x000d6ffffe07e331':
+    friendly_name: bijkkn-lux-ikepanel-marconi
+  '0x000d6ffffeff2f55':
+    friendly_name: bijkkn-lux-ikedriver-morse
+  '0x00158d0002f3c815':
+    friendly_name: faraday
+  '0x385b44fffe1d770e':
+    friendly_name: braun
+  '0x00158d0003498551':
+    friendly_name: stihl

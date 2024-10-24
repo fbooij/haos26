@@ -1,0 +1,9 @@
+- id: '1712676618974'
+  alias: Notify BetterStack Heartbeat Check
+  description: Sends a GET request to the BetterStack heartbeat endpoint every 5 minutes
+  trigger:
+  - platform: time_pattern
+    minutes: /5
+  action:
+  - service: rest_command.betterstack_heartbeat
+  mode: single

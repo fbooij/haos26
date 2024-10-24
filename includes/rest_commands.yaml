@@ -1,0 +1,5 @@
+# rest_command: # https://www.home-assistant.io/integrations/rest_command/
+
+betterstack_heartbeat:
+  url: !secret heartbeat_url
+  method: get
