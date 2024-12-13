@@ -18,6 +18,7 @@ frontend:
 
 #
 automation: !include automations.yaml
+homeassistant: !include includes/homeassistant.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
 rest_command: !include includes/rest_commands.yaml

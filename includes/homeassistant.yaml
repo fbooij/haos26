@@ -1,0 +1,52 @@
+---
+#-
+#  _                                        _     _              _
+# | |__   ___  _ __ ___   ___  __ _ ___ ___(_)___| |_ __ _ _ __ | |_
+# | '_ \ / _ \| '_ ` _ \ / _ \/ _` / __/ __| / __| __/ _` | '_ \| __|
+# | | | | (_) | | | | | |  __/ (_| \__ \__ \ \__ \ || (_| | | | | |_
+# |_| |_|\___/|_| |_| |_|\___|\__,_|___/___/_|___/\__\__,_|_| |_|\__|
+#
+#
+#- from github.com/fbooij/homeassistant
+
+packages: !include_dir_named packages
+# latitude: !secret latitude_home
+# longitude: !secret longitude_home
+# internal_url:
+# external_url:  # XXX: take from .storage config
+# elevation: 0
+unit_system: metric
+country: NL
+time_zone: Europe/Amsterdam
+# name: 0561JMAR
+#allowlist_external_dirs:
+#  - /config/
+#auth_providers:
+#  - type: trusted_networks
+#    trusted_networks:
+#      - 192.168.1.0/24
+      # - 192.168.1.72
+      # - 192.168.1.102
+#     trusted_users:
+#       192.168.1.72: !secret malice_user_id
+#     allow_bypass_login: true
+
+customize: {}
+  # switch.vacuum_mode:
+  #   friendly_name: Vacuum
+  # sensor.temperature_mean:
+  #   icon: mdi:temperature-celsius
+  # light.automatic_lights:
+  #   icon: mdi:robot
+  # light.living_room_lights:
+  #   icon: mdi:sofa
+  # light.bedroom_lights:
+  #   icon: mdi:bed-king
+  # light.toilet:
+  #   icon: mdi:emoticon-poop
+  # plant.monstera:
+  #   friendly_name: Monstera
+  # plant.peace_lily:
+  #   friendly_name: Peace lily
+  # plant.calathea:
+  #   friendly_name: Calathea
