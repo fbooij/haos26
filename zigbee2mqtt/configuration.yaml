@@ -82,8 +82,6 @@ devices:
     friendly_name: keuken-lux-ikecandle-pasteur
   '0x000b57fffe950220':
     friendly_name: keuken-lux-ikecandle-pascal
-  '0x000d6ffffe07e331':
-    friendly_name: bijkkn-lux-ikepanel-marconi
   '0x000d6ffffeff2f55':
     friendly_name: bijkkn-lux-ikedriver-morse
   '0x00158d0002f3c815':
@@ -188,6 +186,8 @@ devices:
     friendly_name: zolder_sen_huemulti_vanrossum
   '0x001788010329fc00':
     friendly_name: entree_sen_huemulti_babbage
+  '0x000d6ffffe07e331':
+    friendly_name: bijkkn_lux_ikepanel_marconi
 blocklist: []
 groups:
   '1':
