@@ -1,9 +1,170 @@
 - id: '1712676618974'
   alias: Notify BetterStack Heartbeat Check
   description: Sends a GET request to the BetterStack heartbeat endpoint every 5 minutes
-  trigger:
-  - platform: time_pattern
+  triggers:
+  - trigger: time_pattern
     minutes: /5
-  action:
-  - service: rest_command.betterstack_heartbeat
+  actions:
+  - action: rest_command.betterstack_heartbeat
   mode: single
+- id: '1733774853058'
+  alias: sensor light wrkmr1 desk
+  description: ''
+  use_blueprint:
+    path: Blackshome/sensor-light.yaml
+    input:
+      motion_trigger:
+      - binary_sensor.wrkmr1_sen_huemulti_copernicus_occupancy
+      light_switch:
+        entity_id: light.wrkmr1_desk_lights
+      time_delay: 15
+- id: '1733777423530'
+  alias: sensor light zolder
+  description: ''
+  use_blueprint:
+    path: Blackshome/sensor-light.yaml
+    input:
+      motion_trigger:
+      - binary_sensor.zolder_sen_huemulti_vanrossum_occupancy
+      light_switch:
+        entity_id: light.zolder_lights
+      time_delay: 2
+- id: '1733777620780'
+  alias: sensor light toilet
+  description: ''
+  use_blueprint:
+    path: Blackshome/sensor-light.yaml
+    input:
+      motion_trigger:
+      - binary_sensor.toilet_sen_huemulti_turing_occupancy
+      light_switch:
+        entity_id: light.toilet_lights
+- id: '1733854973465'
+  alias: sensor light slpkmr2
+  description: ''
+  use_blueprint:
+    path: Blackshome/sensor-light.yaml
+    input:
+      motion_trigger:
+      - binary_sensor.slpkmr2_sen_huemulti_bardeen_occupancy
+      light_switch:
+        entity_id: light.slpkmr2_lights
+- id: '1734010311135'
+  alias: sensor light wrkmr2
+  description: ''
+  use_blueprint:
+    path: Blackshome/sensor-light.yaml
+    input:
+      motion_trigger:
+      - binary_sensor.wrkmr2_sen_huemulti_lamarr_occupancy
+      light_switch:
+        entity_id: light.wrkmr2_lights
+      time_delay: 10
+- id: '1734010462739'
+  alias: sensor light overlp
+  description: ''
+  use_blueprint:
+    path: Blackshome/sensor-light.yaml
+    input:
+      motion_trigger:
+      - binary_sensor.overlp_sen_huemulti_cousteau_occupancy
+      light_switch:
+        entity_id: light.overlp_lights
+- id: '1734010555546'
+  alias: sensor light badkmr
+  description: ''
+  use_blueprint:
+    path: Blackshome/sensor-light.yaml
+    input:
+      motion_trigger:
+      - binary_sensor.badkmr_sen_huemulti_franklin_motion_occupancy
+      light_switch:
+        entity_id: light.badkmr_lux_ikestoft_baer
+      time_delay: 10
+- id: '1734010901342'
+  alias: sensor light achttn
+  description: ''
+  use_blueprint:
+    path: Blackshome/sensor-light.yaml
+    input:
+      motion_trigger:
+      - binary_sensor.actuin_se_huemultioutdoor_bell_motion
+      light_switch:
+        entity_id: light.achttn_lights
+      time_delay: 1
+- id: '1734011013113'
+  alias: sensor light bijkkn
+  description: ''
+  use_blueprint:
+    path: Blackshome/sensor-light.yaml
+    input:
+      motion_trigger:
+      - binary_sensor.bijkkn_sen_huemulti_bernerslee_occupancy
+      light_switch:
+        entity_id: light.bijkkn_lights
+- id: '1734011177064'
+  alias: sensor light eetkmr
+  description: ''
+  use_blueprint:
+    path: Blackshome/sensor-light.yaml
+    input:
+      motion_trigger:
+      - binary_sensor.eetkmr_sen_huemulti_curie_occupancy
+      light_switch:
+        entity_id: light.eetkmr_lights
+      time_delay: 10
+- id: '1734011281640'
+  alias: sensor light zitkmr
+  description: ''
+  use_blueprint:
+    path: Blackshome/sensor-light.yaml
+    input:
+      motion_trigger:
+      - binary_sensor.zitkmr_sen_huemulti_celcius_occupancy
+      light_switch:
+        entity_id: light.zitkmr_lights
+      time_delay: 15
+- id: '1734011640514'
+  alias: sensor light entree
+  description: ''
+  use_blueprint:
+    path: Blackshome/sensor-light.yaml
+    input:
+      motion_trigger:
+      - binary_sensor.entree_occupancy
+      light_switch:
+        entity_id: light.entree_lights
+      time_delay: 3
+- id: '1734012402875'
+  alias: sensor light keuken
+  description: ''
+  use_blueprint:
+    path: Blackshome/sensor-light.yaml
+    input:
+      motion_trigger:
+      - binary_sensor.keuken_sen_huemulti_halley_occupancy
+      light_switch:
+        entity_id:
+        - light.keuken_lights
+- id: '1734099597452'
+  alias: sensor light closet
+  description: ''
+  use_blueprint:
+    path: Blackshome/sensor-light.yaml
+    input:
+      motion_trigger:
+      - binary_sensor.closet_sen_aqacontact_schrodinger_contact
+      time_delay: 0
+      light_switch:
+        entity_id: light.closet_lights
+- id: '1734099648779'
+  alias: sensor light pantry
+  description: ''
+  use_blueprint:
+    path: Blackshome/sensor-light.yaml
+    input:
+      motion_trigger:
+      - binary_sensor.pantry_sen_aqacontact_popov_contact
+      light_switch:
+        entity_id: light.pantry_lights
+      time_delay: 0

@@ -1,0 +1,25 @@
+# https://www.home-assistant.io/integrations/mqtt_statestream/
+base_topic: homeassistant
+publish_attributes: true
+# publish_timestamps: true
+include:
+  entity_globs:
+    # - binary_sensor.*hue*_motion
+    # - sensor.*hue*_temperature
+    # - input_*.var_*
+    # - sensor.var_*
+    # - binary_sensor.var_*
+    # - input_*.tesy_api_*
+    - automation.sensor_light_*
+    - switch.adaptive_lighting_*
+    - light.*_lights
+  # entities:
+  #   - sensor.pv_exop_p1_grid_power
+  #   - sensor.pv_exop_pv_power_output
+  #   - device_tracker.frank_ipxiipm
+  #   - device_tracker.hilde_ipxiipm
+  #   - automation.pv_exop_water_heater_p1_2400w
+  #   - automation.pv_exop_water_heater_0_p1_2400w
+# # #adds entire domains to the mqtt_statestream (i.e. all sensors found in HA)
+# # domains:
+# #   - sensor

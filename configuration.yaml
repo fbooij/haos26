@@ -18,7 +18,9 @@ frontend:
 
 #
 automation: !include automations.yaml
+adaptive_lighting: !include includes/adaptive_lighting.yaml
 homeassistant: !include includes/homeassistant.yaml
+mqtt_statestream: !include includes/mqtt_statestream.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
 rest_command: !include includes/rest_commands.yaml

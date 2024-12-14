@@ -188,6 +188,10 @@ devices:
     friendly_name: entree_sen_huemulti_babbage
   '0x000d6ffffe07e331':
     friendly_name: bijkkn_lux_ikepanel_marconi
+  '0x04cd15fffe789900':
+    friendly_name: wrkmr1_lux_livdesk_brush
+  '0x84ba20fffe830e15':
+    friendly_name: wrkmr1_lux_livfloor_gilbert
 blocklist: []
 groups:
   '1':

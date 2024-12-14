@@ -1,0 +1,220 @@
+#             _             _   _             _ _       _     _   _
+#            | |           | | (_)           | (_)     | |   | | (_)
+#    __ _  __| | __ _ _ __ | |_ ___   _____  | |_  __ _| |__ | |_ _ _ __   __ _
+#   / _` |/ _` |/ _` | '_ \| __| \ \ / / _ \ | | |/ _` | '_ \| __| | '_ \ / _` |
+#  | (_| | (_| | (_| | |_) | |_| |\ V /  __/ | | | (_| | | | | |_| | | | | (_| |
+#   \__,_|\__,_|\__,_| .__/ \__|_| \_/ \___| |_|_|\__, |_| |_|\__|_|_| |_|\__, |
+#                    | |                           __/ |                   __/ |
+#                    |_|                          |___/                   |___/
+#
+#- from github.com/fbooij/homeassistant
+# https://github.com/basnijholt/adaptive-lighting#readme
+
+- name: "service"
+  lights:
+    - light.bijkkn_lights
+    - light.overlp_lights
+    - light.entree_lights
+  prefer_rgb_color: false
+  transition: 45
+  initial_transition: 1
+  interval: 90
+  min_brightness: 20
+  max_brightness: 80
+  min_color_temp: 2000
+  max_color_temp: 4000
+  sleep_brightness: 100
+  sleep_color_temp: 5500
+  max_sunrise_time: "06:30:00" # latest possible sunrise time
+  take_over_control: true
+  detect_non_ha_changes: true # changed to true on 05/08/23
+  autoreset_control_seconds: 900 # added and set to 900 on 05/08/23
+  only_once: false
+##################################
+- name: "badkamer"
+  lights:
+    - light.badkmr_lights
+  prefer_rgb_color: false
+  transition: 45
+  initial_transition: 1
+  interval: 90
+  min_brightness: 20
+  max_brightness: 80
+  min_color_temp: 2000
+  max_color_temp: 4000
+  sleep_brightness: 10
+  sleep_color_temp: 2000
+  max_sunrise_time: "06:30:00" # latest possible sunrise time
+  take_over_control: true
+  detect_non_ha_changes: true # changed to true on 05/08/23
+  autoreset_control_seconds: 900 # added and set to 900 on 05/08/23
+  only_once: false
+##################################
+- name: "zolder"
+  lights:
+    - light.zolder_lights
+  prefer_rgb_color: false
+  transition: 45
+  initial_transition: 1
+  interval: 90
+  min_brightness: 75
+  max_brightness: 100
+  min_color_temp: 2000
+  max_color_temp: 4000
+  sleep_brightness: 10
+  sleep_color_temp: 2000
+  max_sunrise_time: "06:30:00" # latest possible sunrise time
+  take_over_control: true
+  detect_non_ha_changes: true # changed to true on 05/08/23
+  autoreset_control_seconds: 900 # added and set to 900 on 05/08/23
+  only_once: false
+##################################
+- name: "wrkmr1"
+  lights:
+    - light.wrkmr1_desk_lights
+  prefer_rgb_color: false
+  transition: 45
+  initial_transition: 1
+  interval: 90
+  min_brightness: 33
+  max_brightness: 100
+  min_color_temp: 2000
+  max_color_temp: 5500
+  sleep_brightness: 85 # setting for webcam meetings
+  sleep_color_temp: 4500 # setting for webcam meetings
+  sunrise_time: "08:30:00" # latest possible sunrise time
+  take_over_control: true
+  detect_non_ha_changes: true # changed to true on 05/08/23
+  autoreset_control_seconds: 900 # added and set to 900 on 05/08/23
+  only_once: false
+##################################
+- name: "wrkmr2"
+  lights:
+    - light.wrkmr2_lights
+  prefer_rgb_color: false
+  transition: 45
+  initial_transition: 1
+  interval: 90
+  min_brightness: 5
+  max_brightness: 35
+  min_color_temp: 2202
+  max_color_temp: 3303
+  sleep_brightness: 5 # setting for webcam meetings
+  sleep_color_temp: 2202 # setting for webcam meetings
+  sunrise_time: "08:30:00" # latest possible sunrise time
+  take_over_control: true
+  detect_non_ha_changes: true # changed to true on 05/08/23
+  autoreset_control_seconds: 900 # added and set to 900 on 05/08/23
+  only_once: false
+##################################
+- name: "wookmr"
+  lights:
+    - light.wookmr_lights
+  prefer_rgb_color: false
+  transition: 45
+  initial_transition: 1
+  interval: 90
+  min_brightness: 35
+  max_brightness: 65
+  min_color_temp: 1000
+  max_color_temp: 2500
+  sleep_brightness: 25 # setting for watching movies
+  sleep_color_temp: 1000 # setting for watching movies
+  take_over_control: true
+  detect_non_ha_changes: true # changed to true on 05/08/23
+  autoreset_control_seconds: 900 # added and set to 900 on 05/08/23
+  only_once: false
+##################################
+- name: "keuken"
+  lights:
+    - light.keuken_lights
+  prefer_rgb_color: false
+  transition: 45
+  initial_transition: 1
+  interval: 90
+  min_brightness: 40
+  max_brightness: 100
+  min_color_temp: 2000
+  max_color_temp: 4000
+  sleep_brightness: 80
+  sleep_color_temp: 5500
+  max_sunrise_time: "06:30:00" # latest possible sunrise time
+  take_over_control: true
+  detect_non_ha_changes: true # changed to true on 05/08/23
+  autoreset_control_seconds: 900 # added and set to 900 on 05/08/23
+  only_once: false
+##################################
+- name: "keuken plafond"
+  lights:
+    - light.keuken_lux_ikestoft_yotam
+  prefer_rgb_color: false
+  transition: 45
+  initial_transition: 1
+  interval: 90
+  min_brightness: 20
+  max_brightness: 60
+  sleep_brightness: 100
+  max_sunrise_time: "06:30:00" # latest possible sunrise time
+  take_over_control: true
+  detect_non_ha_changes: true # changed to true on 05/08/23
+  autoreset_control_seconds: 900 # added and set to 900 on 05/08/23
+  only_once: false
+##################################
+- name: "buiten"
+  lights:
+    - light.buiten_lux_ikebulb_maybach
+    - light.buiten_lux_huewall_maiman
+  prefer_rgb_color: false
+  transition: 45
+  initial_transition: 1
+  interval: 90
+  min_brightness: 20
+  max_brightness: 100
+  min_color_temp: 2000
+  max_color_temp: 4000
+  sleep_brightness: 100
+  sleep_color_temp: 5500
+  max_sunrise_time: "06:30:00" # latest possible sunrise time
+  take_over_control: true
+  detect_non_ha_changes: true # changed to true on 05/08/23
+  autoreset_control_seconds: 900 # added and set to 900 on 05/08/23
+  only_once: false
+##################################
+- name: "slpkmr1"
+  lights:
+    - light.slpkmr1_lights
+  prefer_rgb_color: false
+  transition: 45
+  initial_transition: 1
+  interval: 90
+  min_brightness: 5
+  max_brightness: 35
+  min_color_temp: 2200
+  max_color_temp: 6500
+  sleep_brightness: 5 # setting for webcam meetings
+  sleep_color_temp: 2200 # setting for webcam meetings
+  max_sunrise_time: "06:00:00" # latest possible sunrise time
+  max_sunset_time: "22:00:00"
+  take_over_control: true
+  detect_non_ha_changes: true # changed to true on 05/08/23
+  autoreset_control_seconds: 900 # added and set to 900 on 05/08/23
+  only_once: false
+##################################
+- name: "slpkmr2"
+  lights:
+    - light.slpkmr2_lights
+  prefer_rgb_color: false
+  transition: 45
+  initial_transition: 1
+  interval: 90
+  min_brightness: 5
+  max_brightness: 35
+  min_color_temp: 2000
+  max_color_temp: 3500
+  sleep_brightness: 100 # setting for webcam meetings
+  sleep_color_temp: 5500 # setting for webcam meetings
+  sunrise_time: "08:30:00" # latest possible sunrise time
+  take_over_control: true
+  detect_non_ha_changes: true # changed to true on 05/08/23
+  autoreset_control_seconds: 900 # added and set to 900 on 05/08/23
+  only_once: false
