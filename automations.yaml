@@ -8,7 +8,7 @@
   - action: rest_command.betterstack_heartbeat
   mode: single
 - id: '1733774853058'
-  alias: sensor light wrkmr1 desk
+  alias: sensor light wrkmr1
   description: ''
   use_blueprint:
     path: Blackshome/sensor-light.yaml
@@ -16,7 +16,7 @@
       motion_trigger:
       - binary_sensor.wrkmr1_sen_huemulti_copernicus_occupancy
       light_switch:
-        entity_id: light.wrkmr1_desk_lights
+        entity_id: light.wrkmr1_lights
       time_delay: 15
 - id: '1733777423530'
   alias: sensor light zolder

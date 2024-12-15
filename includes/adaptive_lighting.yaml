@@ -12,18 +12,15 @@
 
 - name: "service"
   lights:
-    - light.bijkkn_lights
-    - light.overlp_lights
-    - light.entree_lights
-    - light.toilet_lights
+    - light.service_lights
   prefer_rgb_color: false
   transition: 45
   initial_transition: 1
   interval: 90
   min_brightness: 20
   max_brightness: 80
-  min_color_temp: 2000
-  max_color_temp: 4000
+  min_color_temp: 3000
+  max_color_temp: 3000
   sleep_brightness: 100
   sleep_color_temp: 5500
   max_sunrise_time: "06:30:00" # latest possible sunrise time
@@ -72,7 +69,7 @@
 ##################################
 - name: "wrkmr1"
   lights:
-    - light.wrkmr1_desk_lights
+    - light.wrkmr1_lights
   prefer_rgb_color: false
   transition: 45
   initial_transition: 1
@@ -110,7 +107,8 @@
 ##################################
 - name: "wookmr"
   lights:
-    - light.wookmr_lights
+    - light.zitkmr_lights
+    - light.eetkmr_lights
   prefer_rgb_color: false
   transition: 45
   initial_transition: 1
@@ -128,7 +126,9 @@
 ##################################
 - name: "keuken"
   lights:
-    - light.keuken_lights
+    - light.keuken_lux_ikecandle_pascal
+    - light.keuken_lux_ikecandle_pasteur
+    - light.keuken_lux_ikedriver_newton
   prefer_rgb_color: false
   transition: 45
   initial_transition: 1
@@ -163,8 +163,7 @@
 ##################################
 - name: "buiten"
   lights:
-    - light.buiten_lux_ikebulb_maybach
-    - light.buiten_lux_huewall_maiman
+    - light.buiten_lights
   prefer_rgb_color: false
   transition: 45
   initial_transition: 1

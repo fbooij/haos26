@@ -28,7 +28,7 @@ frontend:
 
 #
 
-remote_homeassistant:
+remote_homeassistant: # necessary for Websocket connection with homeassistant.local
   instances:
 
 automation: !include automations.yaml
