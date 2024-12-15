@@ -1,5 +1,5 @@
 # https://www.home-assistant.io/integrations/mqtt_statestream/
-base_topic: homeassistant
+base_topic: homeassistant_b
 publish_attributes: true
 # publish_timestamps: true
 include:
@@ -13,6 +13,7 @@ include:
     - automation.sensor_light_*
     - switch.adaptive_lighting_*
     - light.*_lights
+
   # entities:
   #   - sensor.pv_exop_p1_grid_power
   #   - sensor.pv_exop_pv_power_output

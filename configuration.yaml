@@ -9,6 +9,16 @@ frontend:
 #   use_x_forwarded_for: true
 #   trusted_proxies:
 #     - 127.0.0.1
+# Example filter to include specified domains and exclude specified entities
+
+# mqtt_statestream:
+#   base_topic: homeassistant2
+#   include:
+#     domains:
+#       - automation
+#       - light
+#     entity_globs:
+#       - light.*_group
 
 # sensor:
 #   - platform: serial
@@ -17,6 +27,10 @@ frontend:
 
 
 #
+
+remote_homeassistant:
+  instances:
+
 automation: !include automations.yaml
 adaptive_lighting: !include includes/adaptive_lighting.yaml
 homeassistant: !include includes/homeassistant.yaml

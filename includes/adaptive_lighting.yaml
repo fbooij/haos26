@@ -15,6 +15,7 @@
     - light.bijkkn_lights
     - light.overlp_lights
     - light.entree_lights
+    - light.toilet_lights
   prefer_rgb_color: false
   transition: 45
   initial_transition: 1
@@ -31,7 +32,7 @@
   autoreset_control_seconds: 900 # added and set to 900 on 05/08/23
   only_once: false
 ##################################
-- name: "badkamer"
+- name: "badkmr"
   lights:
     - light.badkmr_lights
   prefer_rgb_color: false
@@ -144,7 +145,7 @@
   autoreset_control_seconds: 900 # added and set to 900 on 05/08/23
   only_once: false
 ##################################
-- name: "keuken plafond"
+- name: "keuken_yotam"
   lights:
     - light.keuken_lux_ikestoft_yotam
   prefer_rgb_color: false
