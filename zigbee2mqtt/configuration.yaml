@@ -192,6 +192,10 @@ devices:
     friendly_name: wrkmr1_lux_livdesk_brush
   '0x84ba20fffe830e15':
     friendly_name: wrkmr1_lux_livfloor_gilbert
+  '0x0017880106fc8a23':
+    friendly_name: achttn_lux_huewall_maiman
+  '0x00178801064489db':
+    friendly_name: achttn_sen_huemultioutdoor_bell
 blocklist: []
 groups:
   '1':

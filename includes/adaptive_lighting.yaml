@@ -161,24 +161,24 @@
   autoreset_control_seconds: 900 # added and set to 900 on 05/08/23
   only_once: false
 ##################################
-- name: "buiten"
-  lights:
-    - light.buiten_lights
-  prefer_rgb_color: false
-  transition: 45
-  initial_transition: 1
-  interval: 90
-  min_brightness: 20
-  max_brightness: 100
-  min_color_temp: 2000
-  max_color_temp: 4000
-  sleep_brightness: 100
-  sleep_color_temp: 5500
-  max_sunrise_time: "06:30:00" # latest possible sunrise time
-  take_over_control: true
-  detect_non_ha_changes: true # changed to true on 05/08/23
-  autoreset_control_seconds: 900 # added and set to 900 on 05/08/23
-  only_once: false
+# - name: "buiten"
+#   lights:
+#     - light.buiten_lights
+#   prefer_rgb_color: false
+#   transition: 45
+#   initial_transition: 1
+#   interval: 90
+#   min_brightness: 20
+#   max_brightness: 100
+#   min_color_temp: 2000
+#   max_color_temp: 4000
+#   sleep_brightness: 100
+#   sleep_color_temp: 5500
+#   max_sunrise_time: "06:30:00" # latest possible sunrise time
+#   take_over_control: true
+#   detect_non_ha_changes: true # changed to true on 05/08/23
+#   autoreset_control_seconds: 900 # added and set to 900 on 05/08/23
+#   only_once: false
 ##################################
 - name: "slpkmr1"
   lights:
