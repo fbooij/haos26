@@ -1,7 +1,5 @@
 homeassistant:
-  enabled: true
-  experimental_event_entities: true
-  legacy_action_sensor: true
+  legacy_entity_attributes: true
 mqtt:
   server: mqtt://core-mosquitto:1883
   user: addons
@@ -10,21 +8,16 @@ serial:
   port: /dev/ttyACM0
   adapter: deconz
 frontend:
-  enabled: true
   port: 8099
-ota: {}
-advanced:
-  log_level: info
+ota:
   ikea_ota_use_test_url: true
+advanced:
   homeassistant_legacy_entity_attributes: false
-  homeassistant_legacy_triggers: false
   legacy_api: false
   legacy_availability_payload: false
+  log_level: info
 device_options:
   legacy: false
-availability:
-  enabled: true
-# device_options: {}
 devices:
   '0x04cf8cdf3c89f257':
     friendly_name: tesla
@@ -44,6 +37,8 @@ devices:
     friendly_name: sonoff zbdongle-e router
   '0x000d6ffffeaa2be9':
     friendly_name: volta_wookmr_heater
+  '0xd0cf5efffeb43eeb':
+    friendly_name: tradfri dimmer
   '0x04cf8cdf3c8d047f':
     friendly_name: ohm
   '0x00158d0002ec0e29':
@@ -200,9 +195,8 @@ devices:
   '0x00178801064489db':
     friendly_name: achttn_sen_huemultioutdoor_bell
   '0xbc33acfffe7428e6':
-    friendly_name: zolder-lux-ikedriver-bacon
+    friendly_name: '0xbc33acfffe7428e6'
 blocklist: []
 groups:
   '1':
     friendly_name: wrkmr1
-version: 4

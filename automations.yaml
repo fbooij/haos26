@@ -84,6 +84,14 @@
       light_switch:
         entity_id: light.badkmr_lux_ikestoft_baer
       time_delay: 10
+      include_night_lights: night_lights_enabled
+      night_lights_conditions:
+      - entity_state_enabled
+      night_lights_entity_state:
+      - input_boolean.r25_var_night_lights_delay
+      night_lights:
+        entity_id: light.badkmr_lights
+      night_time_delay: 1
 - id: '1734010901342'
   alias: sensor light achttn
   description: ''

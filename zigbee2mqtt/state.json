@@ -18,38 +18,38 @@
         "linkquality": 255
     },
     "0x04cf8cdf3c89e786": {
-        "device_temperature": 22,
-        "power_outage_count": 212,
+        "device_temperature": 20,
+        "power_outage_count": 213,
         "state": "ON",
         "voltage": 224,
         "current": 0.04,
-        "power": 9.33,
+        "power": 9.68,
         "consumer_connected": true,
-        "energy": 45.96,
-        "consumption": 45.964115142822266,
+        "energy": 50.14,
+        "consumption": 50.142417907714844,
         "update": {
             "state": "idle",
-            "installed_version": 43,
-            "latest_version": 32
+            "installed_version": 45,
+            "latest_version": 45
         },
         "update_available": false,
         "linkquality": 255,
         "led_disabled_night": false
     },
     "0x54ef4410000fed29": {
-        "device_temperature": 18,
-        "power_outage_count": 575,
+        "device_temperature": 17,
+        "power_outage_count": 576,
         "state": "OFF",
-        "voltage": 222,
+        "voltage": 225,
         "current": 0,
         "power": 0,
         "consumer_connected": true,
-        "energy": 4.91,
-        "consumption": 4.909993648529053,
+        "energy": 6.43,
+        "consumption": 6.43010950088501,
         "update": {
             "state": "idle",
-            "installed_version": 43,
-            "latest_version": 32
+            "installed_version": 45,
+            "latest_version": 45
         },
         "update_available": false,
         "linkquality": 255,
@@ -58,7 +58,6 @@
     "0x00158d00031b46fb": {
         "occupancy": false,
         "illuminance": 83,
-        "illuminance_lux": 83,
         "linkquality": 255,
         "voltage": 3015,
         "battery": 100,
@@ -66,21 +65,21 @@
         "power_outage_count": 73
     },
     "0x00158d0002c9cde2": {
-        "temperature": 18.15,
-        "humidity": 63.24,
-        "pressure": 1033.4,
+        "temperature": 16.66,
+        "humidity": 64.73,
+        "pressure": 972.7,
         "linkquality": 255,
         "voltage": 2935,
         "battery": 57,
         "power_outage_count": 4918
     },
     "0x385b44fffe1a2d1b": {
-        "state": "OFF",
+        "state": "ON",
         "power_on_behavior": "previous",
         "update": {
             "state": "idle",
             "installed_version": 587765297,
-            "latest_version": 537019939
+            "latest_version": 587765297
         },
         "linkquality": 255
     },
@@ -91,52 +90,43 @@
         "update": {
             "state": "idle",
             "installed_version": 587765297,
-            "latest_version": 537019939
+            "latest_version": 587765297
         }
     },
     "0xe0798dfffed1b802": {
         "linkquality": 255
     },
-    "0xd0cf5efffeb43eeb": {
-        "battery": 100,
-        "update": {
-            "state": "available",
-            "installed_version": 304383346,
-            "latest_version": 587367985
-        },
-        "linkquality": 255
-    },
     "0x04cf8cdf3c8d047f": {
-        "device_temperature": 28,
-        "power_outage_count": 17,
+        "device_temperature": 27,
+        "power_outage_count": 18,
         "state": "ON",
-        "energy": 8.02,
-        "consumption": 8.017236709594727,
-        "voltage": 240,
+        "energy": 8.03,
+        "consumption": 8.028103828430176,
+        "voltage": 218,
         "current": 0,
-        "power": 1.13,
+        "power": 1.05,
         "consumer_connected": true,
         "linkquality": 255,
         "update": {
             "state": "idle",
-            "installed_version": 32,
-            "latest_version": 32
+            "installed_version": 45,
+            "latest_version": 45
         }
     },
     "0x00158d0002ec0e29": {
         "contact": true,
         "linkquality": 255,
-        "voltage": 3065,
+        "voltage": 3055,
         "battery": 100,
-        "device_temperature": 17,
+        "device_temperature": 16,
         "power_outage_count": 273,
-        "trigger_count": 0
+        "trigger_count": 8
     },
     "0x00158d0002ec0ccb": {
         "contact": true,
-        "voltage": 3035,
+        "voltage": 3025,
         "battery": 100,
-        "device_temperature": 21,
+        "device_temperature": 20,
         "power_outage_count": 171,
         "linkquality": 255,
         "trigger_count": 0
@@ -147,43 +137,43 @@
         "update": {
             "state": "idle",
             "installed_version": 587765297,
-            "latest_version": 537019939
+            "latest_version": 587765297
         },
-        "linkquality": 255
+        "linkquality": 248
     },
     "0x54ef4410000ff1b9": {
-        "device_temperature": 11,
-        "power_outage_count": 8,
+        "device_temperature": 10,
+        "power_outage_count": 9,
         "state": "OFF",
         "energy": 6.76,
         "consumption": 6.759897232055664,
-        "voltage": 239,
+        "voltage": 224,
         "current": 0,
         "power": 0,
         "consumer_connected": true,
         "linkquality": 255,
         "update": {
             "state": "idle",
-            "installed_version": 32,
-            "latest_version": 32
+            "installed_version": 45,
+            "latest_version": 45
         }
     },
     "0x00158d00036bd4e2": {
-        "temperature": 18.19,
-        "humidity": 60.23,
-        "pressure": 1033.2,
+        "temperature": 17.3,
+        "humidity": 68.86,
+        "pressure": 972.4,
         "linkquality": 255,
-        "voltage": 2945,
-        "battery": 63,
-        "power_outage_count": 484
+        "voltage": 2935,
+        "battery": 57,
+        "power_outage_count": 487
     },
     "0x00158d0002ad8fb6": {
         "linkquality": 255,
         "voltage": 3025,
         "battery": 100,
-        "device_temperature": 23,
+        "device_temperature": 22,
         "power_outage_count": 1110,
-        "power": 235
+        "power": 245
     },
     "0x000d6ffffedecccd": {
         "state": "OFF",
@@ -191,7 +181,7 @@
         "update": {
             "state": "idle",
             "installed_version": 587765297,
-            "latest_version": 537019939
+            "latest_version": 587765297
         },
         "linkquality": 255
     },
@@ -206,21 +196,21 @@
     },
     "0xdc8e95fffe8e9283": {
         "update": {
-            "state": "idle",
+            "state": "available",
             "installed_version": 570492465,
-            "latest_version": 570492465
+            "latest_version": 604241926
         },
         "battery": 34,
         "linkquality": 255
     },
     "0x54ef4410004a686c": {
-        "battery": 72,
-        "device_temperature": 18,
+        "battery": 69,
+        "device_temperature": 17,
         "power_outage_count": 0,
         "state": "OFF",
         "motor_state": "stopped",
         "running": false,
-        "position": 2,
+        "position": 0,
         "linkquality": 255,
         "charging_status": false,
         "motor_speed": "high"
@@ -234,13 +224,12 @@
         "charging": false,
         "position": 100,
         "state": "OPEN",
-        "illuminance_lux": 0,
         "update": {
             "state": "idle",
             "installed_version": 6939,
             "latest_version": 6168
         },
-        "device_temperature": 19,
+        "device_temperature": 18,
         "power_outage_count": 0,
         "motor_state": "stopped",
         "running": false,
@@ -248,21 +237,21 @@
         "linkquality": 255
     },
     "0x04cd15fffe81741e": {
-        "battery": 74,
+        "battery": 47,
         "update": {
-            "state": "idle",
+            "state": "available",
             "installed_version": 570492465,
-            "latest_version": 570492465
+            "latest_version": 604241926
         },
         "linkquality": 255
     },
     "0x04cd15fffe8171f3": {
         "update": {
             "state": "idle",
-            "installed_version": 570492465,
-            "latest_version": 570492465
+            "installed_version": 604241926,
+            "latest_version": 604241926
         },
-        "battery": 21,
+        "battery": 14,
         "linkquality": 255
     },
     "0x000d6ffffe08bb20": {
@@ -270,7 +259,7 @@
         "update": {
             "state": "idle",
             "installed_version": 604241925,
-            "latest_version": 587286065
+            "latest_version": 604241925
         },
         "linkquality": 255
     },
@@ -278,8 +267,8 @@
         "battery": 100,
         "update": {
             "state": "idle",
-            "installed_version": 65572,
-            "latest_version": 65572
+            "installed_version": 33816598,
+            "latest_version": 33816598
         },
         "linkquality": 255
     },
@@ -306,79 +295,68 @@
     },
     "0x086bd7fffe076257": {
         "state": "OFF",
-        "brightness": 103,
+        "brightness": 254,
         "update": {
             "state": "idle",
-            "installed_version": 304371058,
-            "latest_version": 304371058
+            "installed_version": 587753009,
+            "latest_version": 587753009
         },
         "linkquality": 255
     },
     "0x000b57fffe8f0358": {
         "state": "OFF",
-        "linkquality": 196,
+        "linkquality": 255,
         "update": {
             "state": "idle",
-            "installed_version": 587347505,
-            "latest_version": 587347505
+            "installed_version": 587810353,
+            "latest_version": 587810353
         },
-        "brightness": 103
+        "brightness": 254
     },
     "0x000b57fffe950220": {
         "update": {
             "state": "idle",
-            "installed_version": 587347505,
-            "latest_version": 587347505
+            "installed_version": 587810353,
+            "latest_version": 587810353
         },
         "linkquality": 255,
         "state": "OFF",
-        "brightness": 103
+        "brightness": 254
     },
     "0x000d6ffffeff2f55": {
         "state": "OFF",
-        "brightness": 54,
+        "brightness": 203,
         "update": {
             "state": "idle",
-            "installed_version": 304371058,
-            "latest_version": 304371058
+            "installed_version": 587753009,
+            "latest_version": 587753009
         },
-        "linkquality": 232
+        "linkquality": 255
     },
     "0x00158d0002f3c815": {
         "occupancy": false,
         "illuminance": 4,
-        "illuminance_lux": 4,
         "linkquality": 255,
         "voltage": 3015,
         "battery": 100,
-        "device_temperature": 22,
+        "device_temperature": 21,
         "power_outage_count": 82
     },
     "0x00158d0003498551": {
-        "temperature": 18.47,
-        "humidity": 61.44,
-        "pressure": 1033.7,
+        "temperature": 17.8,
+        "humidity": 61.42,
+        "pressure": 973.4,
         "voltage": 2995,
         "battery": 97,
         "power_outage_count": 7,
-        "linkquality": 252
+        "linkquality": 255
     },
     "0x0017880103be04bf": {
         "color_mode": "color_temp",
         "state": "OFF",
-        "brightness": 13,
+        "brightness": 89,
         "linkquality": 255,
-        "color_temp": 454
-    },
-    "0xbc33acfffe7428e6": {
-        "state": "OFF",
-        "linkquality": 255,
-        "update": {
-            "state": "idle",
-            "installed_version": 304371058,
-            "latest_version": 304371058
-        },
-        "brightness": 191
+        "color_temp": 310
     },
     "0x54ef44100060c226": {
         "battery": 100,
@@ -397,7 +375,6 @@
             "installed_version": 6939,
             "latest_version": 6168
         },
-        "illuminance_lux": 0,
         "device_temperature": 19,
         "power_outage_count": 0,
         "linkquality": 255
@@ -405,15 +382,15 @@
     "0x54ef44100070495a": {
         "battery": 100,
         "voltage": 2900,
-        "local_temperature": 18.1,
+        "local_temperature": 17.3,
         "system_mode": "off",
-        "occupied_heating_setpoint": 20.5,
+        "occupied_heating_setpoint": 5,
         "calibrated": true,
         "setup": false,
         "preset": "manual",
         "child_lock": false,
         "window_detection": false,
-        "device_temperature": 20,
+        "device_temperature": 19,
         "power_outage_count": 0,
         "internal_heating_setpoint": 5,
         "valve_alarm": true,
@@ -426,14 +403,14 @@
         "sensor": "internal"
     },
     "0x04cf8cdf3c7d96d2": {
-        "voltage": 2947,
-        "battery": 65,
+        "voltage": 2941,
+        "battery": 61,
         "power_outage_count": 463,
         "linkquality": 255
     },
     "0x04cf8cdf3c7c0963": {
-        "voltage": 2893,
-        "battery": 29,
+        "voltage": 2880,
+        "battery": 20,
         "power_outage_count": 25,
         "linkquality": 255
     },
@@ -461,8 +438,8 @@
         "power_on_behavior": "previous",
         "update": {
             "state": "idle",
-            "installed_version": 537019939,
-            "latest_version": 537019939
+            "installed_version": 587765297,
+            "latest_version": 587765297
         },
         "linkquality": 255
     },
@@ -472,15 +449,14 @@
         "update": {
             "state": "idle",
             "installed_version": 587765297,
-            "latest_version": 537019939
+            "latest_version": 587765297
         },
         "linkquality": 255
     },
     "0x001788010df93f15": {
         "occupancy": false,
-        "illuminance": 0,
-        "illuminance_lux": 0,
-        "temperature": 16.76,
+        "illuminance": 4,
+        "temperature": 14.99,
         "battery": 100,
         "occupancy_timeout": 0,
         "led_indication": false,
@@ -489,21 +465,20 @@
     "0x385cfbfffe6ca692": {
         "update": {
             "state": "idle",
-            "installed_version": 65542,
-            "latest_version": 65542
+            "installed_version": 16842759,
+            "latest_version": 16842759
         },
         "state": "OFF",
-        "brightness": 56,
+        "brightness": 203,
         "linkquality": 255
     },
     "0x0017880106f7fda9": {
-        "battery": 74,
+        "battery": 72.5,
         "occupancy": false,
         "occupancy_timeout": 0,
-        "temperature": 16.24,
+        "temperature": 15.39,
         "illuminance": 0,
-        "illuminance_lux": 0,
-        "linkquality": 212,
+        "linkquality": 255,
         "update": {
             "state": "idle",
             "installed_version": 1107323831,
@@ -511,12 +486,11 @@
         }
     },
     "0x0017880102031631": {
-        "battery": 83,
+        "battery": 80,
         "occupancy_timeout": 0,
         "occupancy": false,
-        "temperature": 17.26,
+        "temperature": 16.13,
         "illuminance": 0,
-        "illuminance_lux": 0,
         "linkquality": 255,
         "update": {
             "state": "idle",
@@ -526,20 +500,19 @@
     },
     "0x943469fffe642e9b": {
         "state": "OFF",
-        "brightness": 55,
+        "brightness": 203,
         "update": {
             "state": "idle",
-            "installed_version": 65542,
-            "latest_version": 65542
+            "installed_version": 16842759,
+            "latest_version": 16842759
         },
         "linkquality": 255
     },
     "0x001788010cd9f99a": {
         "battery": 100,
         "occupancy": false,
-        "illuminance": 0,
-        "illuminance_lux": 0,
-        "temperature": 18.02,
+        "illuminance": 153,
+        "temperature": 20.05,
         "occupancy_timeout": 0,
         "linkquality": 255
     },
@@ -547,16 +520,15 @@
         "battery": 100,
         "occupancy_timeout": 0,
         "occupancy": false,
-        "temperature": 16.23,
-        "illuminance": 3645,
-        "illuminance_lux": 2,
+        "temperature": 15.94,
+        "illuminance": 64,
         "motion_sensitivity": "medium",
         "update": {
             "state": "idle",
             "installed_version": 1124102917,
             "latest_version": 1107323831
         },
-        "linkquality": 255
+        "linkquality": 252
     },
     "0x00178801042ece9d": {
         "color_mode": "color_temp",
@@ -568,8 +540,8 @@
     "0x001788010b3f49bd": {
         "color_mode": "color_temp",
         "state": "ON",
-        "brightness": 85,
-        "color_temp": 500,
+        "brightness": 254,
+        "color_temp": 250,
         "update": {
             "state": "idle",
             "installed_version": 16786434,
@@ -580,30 +552,35 @@
     "0x00178801064022fb": {
         "color_mode": "color_temp",
         "state": "ON",
-        "brightness": 85,
-        "color_temp": 500,
+        "brightness": 254,
+        "color_temp": 250,
         "linkquality": 255
     },
     "0x0017880106400af9": {
         "color_mode": "color_temp",
         "state": "ON",
-        "brightness": 85,
-        "color_temp": 500,
-        "linkquality": 255
+        "brightness": 254,
+        "color_temp": 250,
+        "linkquality": 252
     },
     "0x001788010628c330": {
         "color_mode": "color_temp",
-        "state": "OFF",
+        "state": "ON",
         "linkquality": 255,
-        "brightness": 55,
-        "color_temp": 454
+        "brightness": 89,
+        "color_temp": 353
     },
     "0x0017880102dee9ab": {
         "color_mode": "color_temp",
         "state": "OFF",
-        "brightness": 191,
+        "brightness": 254,
         "color_temp": 343,
-        "linkquality": 255
+        "linkquality": 108,
+        "update": {
+            "state": "idle",
+            "installed_version": 1124103171,
+            "latest_version": 1124103171
+        }
     },
     "0x0017880109ea9306": {
         "color_mode": "color_temp",
@@ -614,20 +591,19 @@
         },
         "state": "OFF",
         "linkquality": 255,
-        "brightness": 89,
-        "color_temp": 158,
+        "brightness": 13,
+        "color_temp": 454,
         "color": {
-            "x": 0.3164,
-            "y": 0.3264
+            "x": 0.5056,
+            "y": 0.4152
         }
     },
     "0x00178801032a1b90": {
         "battery": 81.5,
         "occupancy_timeout": 0,
         "occupancy": false,
-        "temperature": 16.06,
-        "illuminance": 0,
-        "illuminance_lux": 0,
+        "temperature": 14.22,
+        "illuminance": 7,
         "update": {
             "state": "idle",
             "installed_version": 1124102917,
@@ -653,28 +629,33 @@
     },
     "0x0017880102b06a0b": {
         "color_mode": "color_temp",
-        "brightness": 89,
+        "brightness": 95,
         "state": "OFF",
         "color_temp": 454,
         "linkquality": 255
     },
     "0x0017880103be04c5": {
         "color_mode": "color_temp",
-        "brightness": 89,
+        "brightness": 94,
         "state": "OFF",
         "color_temp": 454,
         "linkquality": 255
     },
     "0x0017880102dee36a": {
         "color_mode": "color_temp",
-        "brightness": 89,
+        "brightness": 95,
         "state": "OFF",
         "color_temp": 454,
-        "linkquality": 255
+        "linkquality": 255,
+        "update": {
+            "state": "idle",
+            "installed_version": 1124103171,
+            "latest_version": 1124103171
+        }
     },
     "0x001788010bf87e4f": {
         "color_mode": "color_temp",
-        "brightness": 90,
+        "brightness": 94,
         "state": "OFF",
         "color_temp": 454,
         "update": {
@@ -682,11 +663,11 @@
             "installed_version": 16786690,
             "latest_version": 16786690
         },
-        "linkquality": 255
+        "linkquality": 236
     },
     "0x001788010bf8c3b8": {
         "color_mode": "color_temp",
-        "brightness": 90,
+        "brightness": 94,
         "state": "OFF",
         "color_temp": 454,
         "update": {
@@ -698,18 +679,17 @@
     },
     "0x0017880106bd123e": {
         "color_mode": "color_temp",
-        "brightness": 90,
+        "brightness": 94,
         "state": "OFF",
         "color_temp": 454,
-        "linkquality": 252
+        "linkquality": 255
     },
     "0x0017880106f7f3d8": {
-        "battery": 90.5,
+        "battery": 89.5,
         "occupancy": false,
         "occupancy_timeout": 0,
-        "temperature": 16.78,
-        "illuminance": 0,
-        "illuminance_lux": 0,
+        "temperature": 14.8,
+        "illuminance": 7,
         "update": {
             "state": "idle",
             "installed_version": 1107323831,
@@ -728,65 +708,63 @@
             "latest_version": 16786690
         },
         "linkquality": 255,
-        "brightness": 13,
-        "color_temp": 454
+        "brightness": 89,
+        "color_temp": 310
     },
     "0xbc33acfffe0ce18c": {
         "state": "OFF",
         "update": {
             "state": "idle",
             "installed_version": 587806257,
-            "latest_version": 587531825
+            "latest_version": 587806257
         },
         "linkquality": 255,
-        "brightness": 13
+        "brightness": 89
     },
     "0xbc33acfffe0e1b71": {
         "state": "OFF",
         "update": {
             "state": "idle",
             "installed_version": 587806257,
-            "latest_version": 587531825
+            "latest_version": 587806257
         },
         "linkquality": 255,
-        "brightness": 13
+        "brightness": 89
     },
     "0xbc33acfffe13994a": {
         "state": "OFF",
         "update": {
             "state": "idle",
             "installed_version": 587806257,
-            "latest_version": 587531825
+            "latest_version": 587806257
         },
         "linkquality": 255,
-        "brightness": 13
+        "brightness": 89
     },
     "0x001788010cd668a0": {
         "battery": 100,
-        "illuminance": 0,
-        "illuminance_lux": 0,
-        "temperature": 16.52,
+        "illuminance": 4,
+        "temperature": 15.68,
         "occupancy": false,
         "occupancy_timeout": 0,
-        "linkquality": 255
+        "linkquality": 252
     },
     "0x943469fffe6457b6": {
         "update": {
             "state": "idle",
-            "installed_version": 65542,
-            "latest_version": 65542
+            "installed_version": 16842759,
+            "latest_version": 16842759
         },
         "linkquality": 255,
         "state": "OFF",
-        "brightness": 52
+        "brightness": 203
     },
     "0x001788010862ffd2": {
-        "battery": 38,
+        "battery": 37,
         "occupancy": false,
         "occupancy_timeout": 0,
-        "temperature": 14.71,
+        "temperature": 14.43,
         "illuminance": 0,
-        "illuminance_lux": 0,
         "linkquality": 255,
         "update": {
             "state": "idle",
@@ -804,7 +782,7 @@
             "latest_version": 16786690
         },
         "color_temp": 333,
-        "brightness": 53
+        "brightness": 124
     },
     "0x001788010bb53f81": {
         "color_mode": "color_temp",
@@ -815,7 +793,7 @@
             "installed_version": 16786690,
             "latest_version": 16786690
         },
-        "brightness": 53,
+        "brightness": 124,
         "color_temp": 333
     },
     "0x001788010bb534ab": {
@@ -827,15 +805,14 @@
             "installed_version": 16786690,
             "latest_version": 16786690
         },
-        "brightness": 53,
+        "brightness": 124,
         "color_temp": 333
     },
     "0x0017880106f57744": {
-        "battery": 20,
+        "battery": 18,
         "occupancy": false,
-        "temperature": 15.78,
-        "illuminance": 0,
-        "illuminance_lux": 0,
+        "temperature": 14.36,
+        "illuminance": 2,
         "occupancy_timeout": 0,
         "linkquality": 255,
         "update": {
@@ -847,20 +824,19 @@
     "0x30fb10fffe22e10a": {
         "update": {
             "state": "idle",
-            "installed_version": 65542,
-            "latest_version": 65542
+            "installed_version": 16842759,
+            "latest_version": 16842759
         },
         "linkquality": 255,
         "state": "OFF",
-        "brightness": 51
+        "brightness": 152
     },
     "0x0017880106f54afa": {
-        "battery": 89,
+        "battery": 88,
         "occupancy": false,
         "occupancy_timeout": 0,
-        "temperature": 7.43,
-        "illuminance": 0,
-        "illuminance_lux": 0,
+        "temperature": 6.73,
+        "illuminance": 4,
         "linkquality": 255,
         "update": {
             "state": "idle",
@@ -883,19 +859,17 @@
     "0x001788010cd66406": {
         "battery": 100,
         "illuminance": 0,
-        "illuminance_lux": 0,
-        "temperature": 19.08,
+        "temperature": 17.96,
         "occupancy": false,
         "occupancy_timeout": 0,
         "linkquality": 255
     },
     "0x001788010329fc00": {
-        "battery": 28,
+        "battery": 25.5,
         "occupancy": false,
-        "temperature": 13.65,
+        "temperature": 12.66,
         "occupancy_timeout": 0,
-        "illuminance": 0,
-        "illuminance_lux": 0,
+        "illuminance": 2,
         "update": {
             "state": "idle",
             "installed_version": 1107323831,
@@ -906,13 +880,13 @@
     "0x000d6ffffe07e331": {
         "state": "OFF",
         "color_mode": "color_temp",
-        "brightness": 54,
+        "brightness": 203,
         "linkquality": 255,
         "color_temp": 333,
         "update": {
             "state": "idle",
-            "installed_version": 304235891,
-            "latest_version": 304235891
+            "installed_version": 587757105,
+            "latest_version": 587757105
         }
     },
     "0x04cd15fffe789900": {
@@ -938,15 +912,19 @@
         "state": "OFF",
         "brightness": 254,
         "linkquality": 255,
-        "power_on_behavior": "on"
+        "power_on_behavior": "on",
+        "update": {
+            "state": "idle",
+            "installed_version": 16786944,
+            "latest_version": 16786944
+        }
     },
     "0x00178801064489db": {
         "battery": 100,
         "occupancy": false,
-        "temperature": 5.77,
+        "temperature": 10.71,
         "occupancy_timeout": 0,
-        "illuminance": 0,
-        "illuminance_lux": 0,
+        "illuminance": 150,
         "linkquality": 255,
         "update": {
             "state": "idle",
@@ -954,5 +932,15 @@
             "latest_version": 1107323831
         },
         "motion_sensitivity": "high"
+    },
+    "0xbc33acfffe7428e6": {
+        "state": "OFF",
+        "linkquality": 255,
+        "brightness": 254,
+        "update": {
+            "state": "available",
+            "installed_version": 304371058,
+            "latest_version": 587753009
+        }
     }
 }
