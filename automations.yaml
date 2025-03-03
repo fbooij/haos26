@@ -1,8 +1,6 @@
-- id: '1712676618974'
-  alias: Notify BetterStack Heartbeat Check (*.26)
-  description: 'Heartbeat GET request for the 192.168.1.26:8123 instance
-
-    Sends a GET request to the BetterStack heartbeat endpoint every 5 minutes'
+- id: 'notify_betterstack_heartbeat_check'
+  alias: Notify BetterStack Heartbeat Check
+  description: 'Heartbeat GET request to the BetterStack heartbeat endpoint every 5 minutes'
   triggers:
   - trigger: time_pattern
     minutes: /5
@@ -21,6 +19,18 @@
       light_switch:
         entity_id: light.wrkmr1_lights
       time_delay: 15
+- id: "notify_slack_on_ha_restart"
+  alias: Notify Slack on HA Restart
+  description: Send a debug message to Slack when HA restarts
+  triggers:
+    - trigger: homeassistant
+      event: start
+  action:
+    - action: rest_command.notify_slack
+      data:
+        channel: "#haos_debug"
+        message: >
+          :ha_haos: Home Assistant (192.168.1.26) has restarted at `{{ now().strftime('%Y-%m-%d %H:%M:%S') }}`
 - id: '1733777423530'
   alias: sensor light zolder
   description: ''
@@ -31,7 +41,7 @@
       - binary_sensor.zolder_sen_huemulti_vanrossum_occupancy
       light_switch:
         entity_id: light.zolder_lights
-      time_delay: 2
+      time_delay: 10
 - id: '1733777620780'
   alias: sensor light toilet
   description: ''

@@ -3,3 +3,11 @@
 betterstack_heartbeat:
   url: !secret heartbeat_url
   method: get
+
+notify_slack:
+  url: !secret slack_webhook_url
+  method: post
+  headers:
+    accept: "application/json"
+    content-type: "application/json"
+  payload: '{"channel": "{{ channel }}", "text": "{{ message }}"}'

@@ -12,10 +12,10 @@ serial:
 frontend:
   enabled: true
   port: 8099
-ota: {}
+ota:
+  ikea_ota_use_test_url: false
 advanced:
   log_level: info
-  ikea_ota_use_test_url: true
   homeassistant_legacy_entity_attributes: false
   homeassistant_legacy_triggers: false
   legacy_api: false
@@ -24,14 +24,9 @@ device_options:
   legacy: false
 availability:
   enabled: true
-# device_options: {}
 devices:
   '0x04cf8cdf3c89f257':
     friendly_name: tesla
-  '0x04cf8cdf3c89e786':
-    friendly_name: watt
-  '0x54ef4410000fed29':
-    friendly_name: galvani
   '0x8cf681fffe4de7a0':
     friendly_name: pascal
   '0x00158d0002c9cde2':
@@ -39,11 +34,11 @@ devices:
   '0x00158d00031b46fb':
     friendly_name: carson
   '0x385b44fffe1a2d1b':
-    friendly_name: ockham_wrkmr1_heater
+    friendly_name: ockham_wrkmr1_heaterX
   '0xe0798dfffed1b802':
     friendly_name: sonoff zbdongle-e router
   '0x000d6ffffeaa2be9':
-    friendly_name: volta_wookmr_heater
+    friendly_name: volta_wookmr_heaterX
   '0x04cf8cdf3c8d047f':
     friendly_name: ohm
   '0x00158d0002ec0e29':
@@ -51,7 +46,7 @@ devices:
   '0x00158d0002ec0ccb':
     friendly_name: closet_sen_aqacontact_schrödinger
   '0x086bd7fffe0042f0':
-    friendly_name: talbot
+    friendly_name: talbot_wrkmr_heater
   '0x54ef4410000ff1b9':
     friendly_name: joule
   '0x00158d00036bd4e2':
@@ -59,7 +54,7 @@ devices:
   '0x00158d0002ad8fb6':
     friendly_name: shima
   '0x000d6ffffedecccd':
-    friendly_name: farad_wookmr_heater
+    friendly_name: farad_wookmr_heaterX
   '0x000d6ffffee80905':
     friendly_name: sherman
   '0xdc8e95fffe8e9283':
@@ -106,9 +101,9 @@ devices:
   '0x54ef4410008c45a1':
     friendly_name: '0x54ef4410008c45a1'
   '0x5c0272fffe627239':
-    friendly_name: geiger_wrkmr2_heater
+    friendly_name: geiger_wrkmr2_heaterX
   '0x000b3cfffef2a81c':
-    friendly_name: whitney_slpkmr2_heater
+    friendly_name: whitney_wookmr_heater
   '0x001788010df93f15':
     friendly_name: slpkmr2_sen_huemulti_bardeen
   '0x385cfbfffe6ca692':
@@ -194,13 +189,25 @@ devices:
   '0x04cd15fffe789900':
     friendly_name: wrkmr1_lux_livdesk_brush
   '0x84ba20fffe830e15':
-    friendly_name: wrkmr1_lux_livfloor_gilbert
+    friendly_name: wookmr_lux_livfloor_gilbert1
   '0x0017880106fc8a23':
     friendly_name: achttn_lux_huewall_maiman
   '0x00178801064489db':
     friendly_name: achttn_sen_huemultioutdoor_bell
   '0xbc33acfffe7428e6':
     friendly_name: zolder-lux-ikedriver-bacon
+  '0x0017880106bd122d':
+    friendly_name: slpkmr2_lux_huecandle_goudsmit
+  '0x003c84fffe6a9791':
+    friendly_name: wookmr_lux_livfloor_gilbert2
+  '0x385b44fffe1d770e':
+    friendly_name: braun_wookmr_heater
+  '0x00158d008b040482':
+    friendly_name: keuken_sen_aqatemp_sommer
+  '0x04cf8cdf3c89e786':
+    friendly_name: watt
+  '0x54ef4410000fed29':
+    friendly_name: galvani
 blocklist: []
 groups:
   '1':
