@@ -159,7 +159,7 @@
       - binary_sensor.keuken_sen_huemulti_halley_occupancy
       light_switch:
         entity_id:
-        - light.keuken_lights
+        - light.keuken_lux_group
 - id: '1734099597452'
   alias: sensor light closet
   description: ''
@@ -204,19 +204,13 @@
         metadata: {}
         data: {}
         target:
-          entity_id: light.slpkmr_lights
-      down_released:
-      - action: light.turn_off
-        metadata: {}
-        data: {}
-        target:
-          entity_id: light.slpkmr_lights
+          entity_id: light.slpkmr_lux_group
       off_released:
       - action: light.turn_off
         metadata: {}
         data: {}
         target:
-          entity_id: light.slpkmr_lights
+          entity_id: light.slpkmr_lux_group
 - id: '1741103286010'
   alias: sensor light kelder
   description: ''
@@ -226,5 +220,5 @@
       motion_trigger:
       - binary_sensor.kelder_sen_huemulti_cousteau_occupancy
       light_switch:
-        entity_id: light.kelder_lights
+        entity_id: light.kelder_lux_group
       time_delay: 5
