@@ -78,7 +78,7 @@ devices:
   '0x0017880102dee9ab':
     friendly_name: bijkkn_lux_huebulb_gatso
   '0x001788010b9dad70':
-    friendly_name: overlp_lux_hueorb_swainson
+    friendly_name: zitkmr_lux_hueorb_swainson
   '0x0017880104cdc863':
     friendly_name: keuken_lux_huespot_dubos
   '0x0017880104c36f02':

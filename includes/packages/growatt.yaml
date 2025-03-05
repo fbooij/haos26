@@ -1,0 +1,145 @@
+# # Growatt PV Inverter Monitoring and Control
+
+# modbus:
+#   - name: "Growatt"
+#     type: tcp
+#     host: 192.168.1.33
+#     port: 502
+#     sensors:
+#       - name: "PV Energy Today"
+#         unit_of_measurement: "kWh"
+#         slave: 1
+#         address: 53
+#         input_type: input
+#         scale: 0.1
+#         precision: 1
+#         device_class: energy
+#         data_type: custom
+#         structure: ">I"
+#         count: 2
+#         state_class: total_increasing
+#       - name: "PV Energy PV1 Today"
+#         unit_of_measurement: "kWh"
+#         slave: 1
+#         address: 59
+#         input_type: input
+#         scale: 0.1
+#         precision: 1
+#         device_class: energy
+#         data_type: custom
+#         structure: ">I"
+#         count: 2
+#         state_class: total_increasing
+#       - name: "PV Energy PV2 Today"
+#         unit_of_measurement: "kWh"
+#         slave: 1
+#         address: 64
+#         input_type: input
+#         scale: 0.1
+#         precision: 1
+#         device_class: energy
+#         state_class: total_increasing
+#       - name: "PV Power Output"
+#         unit_of_measurement: "W"
+#         slave: 1
+#         address: 35
+#         input_type: input
+#         scale: 0.1
+#         precision: 1
+#         device_class: power
+#         data_type: custom
+#         structure: ">I" # Unsigned 32-bit integer
+#         count: 2 # Read 2 registers
+#       - name: "PV Power Total"
+#         unit_of_measurement: "W"
+#         slave: 1
+#         address: 1
+#         input_type: input
+#         scale: 0.1
+#         precision: 1
+#         device_class: power
+#         data_type: custom
+#         structure: ">I" # Unsigned 32-bit integer
+#         count: 2 # Read 2 registers
+#       - name: "Export Limit Percentage"
+#         slave: 1
+#         address: 123
+#         data_type: int16
+#         scale: 0.1
+#         unit_of_measurement: "%"
+
+# # Input components for controlling export limitation
+# input_number:
+#   growatt_export_limit:
+#     name: "Export Limit Percentage"
+#     min: -100
+#     max: 100
+#     step: 1
+#     unit_of_measurement: "%"
+#     icon: mdi:percent
+
+# input_boolean:
+#   growatt_control_enabled:
+#     name: "Enable Export Limitation Control"
+#     initial: false
+#     icon: mdi:toggle-switch
+
+# # Automations for updating export limitation
+# automation:
+#   - alias: "Update Export Limit on Input Change"
+#     trigger:
+#       - platform: state
+#         entity_id: input_number.growatt_export_limit
+#     condition:
+#       - condition: state
+#         entity_id: input_boolean.growatt_control_enabled
+#         state: "on"
+#     action:
+#       - service: modbus.write_register
+#         data:
+#           hub: growatt
+#           unit: 1
+#           address: 123
+#           value: "{{ states('input_number.growatt_export_limit') | int }}"
+
+#   - alias: "Enable/Disable Export Limitation Control"
+#     trigger:
+#       - platform: state
+#         entity_id: input_boolean.growatt_control_enabled
+#     action:
+#       - choose:
+#           - conditions:
+#               - condition: state
+#                 entity_id: input_boolean.growatt_control_enabled
+#                 state: "on"
+#             sequence:
+#               - service: modbus.write_register
+#                 data:
+#                   hub: growatt
+#                   unit: 1
+#                   address: 122
+#                   value: 1  # Enable export limitation
+#           - conditions:
+#               - condition: state
+#                 entity_id: input_boolean.growatt_control_enabled
+#                 state: "off"
+#             sequence:
+#               - service: modbus.write_register
+#                 data:
+#                   hub: growatt
+#                   unit: 1
+#                   address: 122
+#                   value: 0  # Disable export limitation
+
+# # Sensors for dynamic control
+# template:
+#   - sensor:
+#       - name: "Dynamic Export Limit"
+#         state: "{{ states('input_number.growatt_export_limit') }}"
+#         unit_of_measurement: "%"
+#         icon: mdi:percent
+#       - name: "Control Enabled"
+#         state: "{{ is_state('input_boolean.growatt_control_enabled', 'on') }}"
+#         icon: mdi:toggle-switch
+
+{}
