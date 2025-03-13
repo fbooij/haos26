@@ -25,14 +25,15 @@ light:
       - light.badkmr_group
       - light.wrkmr1_group
 
-  # # kelder
+  # # studio
   - platform: group
-    name: kelder_lux_group
+    name: studio_lux_group
     entities:
-      - light.kelder_lux_huebulb_laennec
-      - light.kelder_lux_huebulb_marcelin
-      - light.kelder_lux_huebulb_reaumur
-      - light.kelder_lux_huebulb_shannon
+      - light.studio_lux_huebulb_marcelin
+      - light.studio_lux_huebulb_reaumur
+      - light.studio_lux_huebulb_shannon
+      - light.studio_lux_livdesk_gilbert3
+      - light.studio_lux_livdesk_gilbert4
   # # beneden
   - platform: group
     name: bijkkn_lux_group

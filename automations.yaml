@@ -18,8 +18,11 @@
       motion_trigger:
       - binary_sensor.wrkmr1_sen_huemulti_copernicus_occupancy
       light_switch:
-        entity_id: light.wrkmr1_lights
+        entity_id: light.z2m_wrkmr1_lux_group
       time_delay: 15
+      include_ambient: ambient_enabled
+      ambient_light_sensor: sensor.wrkmr1_sen_huemulti_copernicus_illuminance
+      ambient_light_options: ambient_light_option_enabled
 - id: notify_slack_on_ha_restart
   alias: Notify Slack on HA Restart
   description: Send a debug message to Slack when HA restarts
@@ -54,7 +57,7 @@
       motion_trigger:
       - binary_sensor.toilet_sen_huemulti_turing_occupancy
       light_switch:
-        entity_id: light.toilet_lights
+        entity_id: light.z2m_toilet_lux_group
 - id: '1733854973465'
   alias: sensor light slpkmr2
   description: ''
@@ -85,7 +88,7 @@
       motion_trigger:
       - binary_sensor.badkmr_sen_huemulti_franklin_occupancy
       light_switch:
-        entity_id: light.badkmr_lux_ikestoft_gould
+        entity_id: light.z2m_badkmr_lux_group
       time_delay: 10
       include_night_lights: night_lights_enabled
       night_lights_conditions:
@@ -115,7 +118,8 @@
       motion_trigger:
       - binary_sensor.bijkkn_sen_huemulti_babbage_occupancy
       light_switch:
-        entity_id: light.bijkkn_lux_huebulb_gatso
+        entity_id:
+        - light.z2m_bijkkn_lux_group
 - id: '1734011177064'
   alias: sensor light eetkmr
   description: ''
@@ -136,8 +140,10 @@
       motion_trigger:
       - binary_sensor.zitkmr_sen_huemulti_celcius_occupancy
       light_switch:
-        entity_id: light.zitkmr_lights
+        entity_id: light.z2m_zitkmr_lux_group
       time_delay: 30
+      ambient_light_sensor: sensor.zitkmr_sen_huemulti_celcius_illuminance
+      ambient_light_options: ambient_light_option_enabled
 - id: '1734011640514'
   alias: sensor light entree
   description: ''
@@ -158,8 +164,7 @@
       motion_trigger:
       - binary_sensor.keuken_sen_huemulti_halley_occupancy
       light_switch:
-        entity_id:
-        - light.keuken_lux_group
+        entity_id: light.z2m_keuken_lux_group
 - id: '1734099597452'
   alias: sensor light closet
   description: ''
@@ -191,7 +196,7 @@
       motion_trigger:
       - binary_sensor.overlp_sen_huemulti_alferov_occupancy
       light_switch:
-        entity_id: light.overlp_lux_huebulb_knuth
+        entity_id: light.z2m_overlp_lux_group
 - id: '1741101160785'
   alias: button light slpkmr
   description: ''
@@ -204,21 +209,21 @@
         metadata: {}
         data: {}
         target:
-          entity_id: light.slpkmr_lux_group
+          entity_id: light.z2m_slpkmr_lux_group
       off_released:
       - action: light.turn_off
         metadata: {}
         data: {}
         target:
-          entity_id: light.slpkmr_lux_group
+          entity_id: light.z2m_slpkmr_lux_group
 - id: '1741103286010'
-  alias: sensor light kelder
+  alias: sensor light studio
   description: ''
   use_blueprint:
     path: Blackshome/sensor-light.yaml
     input:
       motion_trigger:
-      - binary_sensor.kelder_sen_huemulti_cousteau_occupancy
+      - binary_sensor.studio_sen_huemulti_cousteau_occupancy
       light_switch:
-        entity_id: light.kelder_lux_group
+        entity_id: light.z2m_studio_lux_group
       time_delay: 5

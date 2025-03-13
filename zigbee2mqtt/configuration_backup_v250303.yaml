@@ -171,7 +171,7 @@ devices:
   '0x001788010bb53f81':
     friendly_name: toilet_lux_huespot_taylor
   '0x001788010bb534ab':
-    friendly_name: toilet_lux_huespot_thompson
+    friendly_name: v
   '0x0017880106f57744':
     friendly_name: keuken_sen_huemulti_halley
   '0x30fb10fffe22e10a':

@@ -46,23 +46,19 @@ devices:
   '0x0017880106f57744':
     friendly_name: keuken_sen_huemulti_halley
   '0x00178801032a1b90':
-    friendly_name: _zitkmr_sen_huemulti_celcius
+    friendly_name: zitkmr_sen_huemulti_celcius
   '0x0017880104c8de92':
-    friendly_name: kelder_lux_huebulb_marcelin
+    friendly_name: studio_lux_huebulb_marcelin
   '0x001788010423d9e0':
-    friendly_name: kelder_lux_huebulb_reaumur
-  '0x0017880104102670':
-    friendly_name: kelder_lux_huebulb_laennec
-  '0x0017880100d68537':
-    friendly_name: kelder_lux_huebulb_shannon
+    friendly_name: studio_lux_huebulb_reaumur
   '0x5c0272fffe627239':
-    friendly_name: wookmr_pow_ikesock_geiger_heater
+    friendly_name: zitkmr_pow_ikesock_geiger_heater
   '0x385b44fffe1a2d1b':
-    friendly_name: wookmr_pow_ikesock_ockham_heater
+    friendly_name: eetkmr_pow_ikesock_ockham_heater
   '0x086bd7fffe0042f0':
-    friendly_name: entree_pow_ikesock_talbot
+    friendly_name: studio_pow_ikesock_talbot
   '0x385b44fffe1d770e':
-    friendly_name: pantry_pow_ikesock_brown
+    friendly_name: zitkmr_pow_ikesock_braun
   '0x000d6ffffeaa2be9':
     friendly_name: wrkmr1_pow_ikesock_volta_heater
   '0x54ef4410004a686c':
@@ -74,7 +70,7 @@ devices:
   '0x000b3cfffef2a81c':
     friendly_name: kelder_pow_ikesock_whitney
   '0x00178801032a158f':
-    friendly_name: _wrkmr1_sen_huemulti_copernicus
+    friendly_name: wrkmr1_sen_huemulti_copernicus
   '0x0017880102dee9ab':
     friendly_name: bijkkn_lux_huebulb_gatso
   '0x001788010b9dad70':
@@ -114,11 +110,11 @@ devices:
   '0x001788010df9588c':
     friendly_name: overlp_sen_huemulti_alferov
   '0x001788010862ffd2':
-    friendly_name: _sen_huemulti_turing
+    friendly_name: toilet_sen_huemulti_turing
   '0x001788010cd66406':
     friendly_name: _sen_huemulti_abbott
   '0x0017880102031631':
-    friendly_name: kelder_sen_huemulti_cousteau
+    friendly_name: studio_sen_huemulti_cousteau
   '0x0017880106f54afa':
     friendly_name: _sen_huemulti_bernerslee
   '0x001788010df9376b':
@@ -140,11 +136,65 @@ devices:
   '0x001788010cd668a0':
     friendly_name: eetkmr_sen_huemulti_woodhouse
   '0x04cd15fffea027fd':
-    friendly_name: kelder_lux_livdesk_gilbert3
+    friendly_name: studio_lux_livdesk_gilbert3
   '0x04cd15fffe789900':
-    friendly_name: kelder_lux_livdesk_gilbert4
+    friendly_name: studio_lux_livdesk_gilbert4
+  '0x8cf681fffe4de7a0':
+    friendly_name: '0x8cf681fffe4de7a0'
+  '0x04cd15fffe8171f3':
+    friendly_name: '0x04cd15fffe8171f3'
+  '0x000d6ffffe08bb20':
+    friendly_name: '0x000d6ffffe08bb20'
+  '0xf0d1b8be2408693d':
+    friendly_name: buiten_pow_ledsock_karlstrup
+  '0xf0d1b8be240874a8':
+    friendly_name: buiten_pow_ledsock_laudrup
+  '0x00158d0007e02a84':
+    friendly_name: kelder_sen_aqadoor_sutton
+  '0x00158d0002c9cde2':
+    friendly_name: '0x00158d0002c9cde2'
+  '0x00158d0002ec0ccb':
+    friendly_name: '0x00158d0002ec0ccb'
+  '0xf0d1b8be24086cfb':
+    friendly_name: buiten_pow_ledsock_skovstrup
+  '0x001788010bb53f7b':
+    friendly_name: toilet_lux_huespot_templeton
+  '0x001788010bb534ab':
+    friendly_name: toilet_lux_huespot_thompson
+  '0x54ef44100060c226':
+    friendly_name: '0x54ef44100060c226'
 blocklist: []
 groups:
   '1':
-    friendly_name: wrkmr1
+    friendly_name: z2m_zitkmrhue_lux_group
+  '2':
+    friendly_name: z2m_zitkmr_lux_group
+  '3':
+    friendly_name: z2m_keuken_lux_group
+  '4':
+    friendly_name: z2m_wrkmr1_lux_group
+  '5':
+    friendly_name: z2m_toilet_lux_group
+  '6':
+    friendly_name: z2m_wrkmr2_lux_group
+  '7':
+    friendly_name: z2m_overlp_lux_group
+  '8':
+    friendly_name: z2m_slpkmr_lux_group
+  '9':
+    friendly_name: z2m_buiten_pow_group
+  '10':
+    friendly_name: z2m_kelder_lux_group
+  '11':
+    friendly_name: z2m_studio_lux_group
+  '12':
+    friendly_name: z2m_bijkkn_lux_group
+  '13':
+    friendly_name: z2m_entree_lux_group
+  '14':
+    friendly_name: z2m_eetkmr_lux_group
+  '15':
+    friendly_name: z2m_badkmr_lux_group
+  '16':
+    friendly_name: z2m_zitkmrliv_lux_group
 version: 4
