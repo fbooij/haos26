@@ -270,8 +270,11 @@
   max_brightness: 85
   min_color_temp: 2000
   max_color_temp: 6535
+  sleep_rgb_or_color_temp: rgb_color # Use either "rgb_color" or "color_temp" in sleep mode.
   sleep_brightness: 5
-  sleep_color_temp: 2000
+  # sleep_color_temp: 2000 # Color temperature in sleep mode (used when sleep_rgb_or_color_temp is color_temp) in Kelvin.
+  sleep_rgb_color: [255,0,0]
+  transition_until_sleep: true # When enabled, Adaptive Lighting will treat sleep settings as the minimum, transitioning to these values after sunset.
   sunrise_time: "08:30:00"
   take_over_control: true
   detect_non_ha_changes: true
@@ -308,4 +311,23 @@
   take_over_control: true
   detect_non_ha_changes: true
   autoreset_control_seconds: 900
+  only_once: false
+
+- name: "overlp"
+  lights:
+    - light.z2m_overlp_lux_group
+  prefer_rgb_color: false
+  transition: 45
+  initial_transition: 1
+  interval: 90
+  min_brightness: 40
+  max_brightness: 100
+  min_color_temp: 2000
+  max_color_temp: 4000
+  sleep_brightness: 80
+  sleep_color_temp: 5500
+  max_sunrise_time: "06:30:00" # latest possible sunrise time
+  take_over_control: true
+  detect_non_ha_changes: true # changed to true on 05/08/23
+  autoreset_control_seconds: 900 # added and set to 900 on 05/08/23
   only_once: false
