@@ -42,7 +42,7 @@ devices:
   '0x0017880102b06a0b':
     friendly_name: zitkmr_lux_huebulb_huygens
   '0x0017880106f7f3d8':
-    friendly_name: _eetkmr_sen_huemulti_curie
+    friendly_name: closet_sen_huemulti_curie
   '0x0017880106f57744':
     friendly_name: keuken_sen_huemulti_halley
   '0x00178801032a1b90':
@@ -52,9 +52,9 @@ devices:
   '0x001788010423d9e0':
     friendly_name: studio_lux_huebulb_reaumur
   '0x5c0272fffe627239':
-    friendly_name: zitkmr_pow_ikesock_geiger_heater
+    friendly_name: _pow_ikesock_geiger_heater
   '0x385b44fffe1a2d1b':
-    friendly_name: eetkmr_pow_ikesock_ockham_heater
+    friendly_name: slpkmr_pow_ikesock_ockham_heater
   '0x086bd7fffe0042f0':
     friendly_name: studio_pow_ikesock_talbot
   '0x385b44fffe1d770e':
@@ -116,7 +116,7 @@ devices:
   '0x0017880102031631':
     friendly_name: studio_sen_huemulti_cousteau
   '0x0017880106f54afa':
-    friendly_name: _sen_huemulti_bernerslee
+    friendly_name: pantry_sen_huemulti_bernerslee
   '0x001788010df9376b':
     friendly_name: _sen_huemulti_vanrossum
   '0x0017880104ac1670':
@@ -139,10 +139,6 @@ devices:
     friendly_name: studio_lux_livdesk_gilbert3
   '0x04cd15fffe789900':
     friendly_name: studio_lux_livdesk_gilbert4
-  '0x8cf681fffe4de7a0':
-    friendly_name: '0x8cf681fffe4de7a0'
-  '0x04cd15fffe8171f3':
-    friendly_name: '0x04cd15fffe8171f3'
   '0x000d6ffffe08bb20':
     friendly_name: '0x000d6ffffe08bb20'
   '0xf0d1b8be2408693d':
@@ -151,10 +147,6 @@ devices:
     friendly_name: buiten_pow_ledsock_laudrup
   '0x00158d0007e02a84':
     friendly_name: kelder_sen_aqadoor_sutton
-  '0x00158d0002c9cde2':
-    friendly_name: '0x00158d0002c9cde2'
-  '0x00158d0002ec0ccb':
-    friendly_name: '0x00158d0002ec0ccb'
   '0xf0d1b8be24086cfb':
     friendly_name: buiten_pow_ledsock_skovstrup
   '0x001788010bb53f7b':
@@ -163,6 +155,16 @@ devices:
     friendly_name: toilet_lux_huespot_thompson
   '0x54ef44100060c226':
     friendly_name: '0x54ef44100060c226'
+  '0x2c1165fffe3008c8':
+    friendly_name: pantry_lux_ikebulb_maybach
+  '0x001788010412a882':
+    friendly_name: closet_lux_ikebulb_planck
+  '0x54ef44100060ac97':
+    friendly_name: '0x54ef44100060ac97'
+  '0x04cf8cdf3c8d047f':
+    friendly_name: eetkmr_pow_aqasock_ohm_heater
+  '0x54ef4410000ff1b9':
+    friendly_name: zitkmr_pow_aqasock_joule_heater
 blocklist: []
 groups:
   '1':
@@ -197,4 +199,6 @@ groups:
     friendly_name: z2m_badkmr_lux_group
   '16':
     friendly_name: z2m_zitkmrliv_lux_group
+  '17':
+    friendly_name: z2m_pantry_lux_group
 version: 4

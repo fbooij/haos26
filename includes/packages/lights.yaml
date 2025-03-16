@@ -88,3 +88,12 @@ light:
 #         state: >
 #           {{ is_state('binary_sensor.entree_sen_huemulti_babbage_occupancy', 'on') or
 #              is_state('binary_sensor.entree_sen_huemulti_woodhouse_occupancy', 'on') }}
+
+template:
+  - binary_sensor:
+      - name: "pantry_occupancy" # consolidates two motion sensors into one, for automations
+        unique_id: pantry_occupancy
+        device_class: occupancy
+        state: >
+          {{ is_state('binary_sensor.closet_sen_huemulti_curie_occupancy', 'on') or
+            is_state('binary_sensor.pantry_sen_huemulti_bernerslee_occupancy', 'on') }}

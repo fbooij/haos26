@@ -37,17 +37,6 @@
         %H:%M:%S'') }}`
 
         '
-- id: '1733777423530'
-  alias: sensor light zolder
-  description: ''
-  use_blueprint:
-    path: Blackshome/sensor-light.yaml
-    input:
-      motion_trigger:
-      - binary_sensor.zolder_sen_huemulti_vanrossum_occupancy
-      light_switch:
-        entity_id: light.zolder_lights
-      time_delay: 10
 - id: '1733777620780'
   alias: sensor light toilet
   description: ''
@@ -58,27 +47,6 @@
       - binary_sensor.toilet_sen_huemulti_turing_occupancy
       light_switch:
         entity_id: light.z2m_toilet_lux_group
-- id: '1733854973465'
-  alias: sensor light slpkmr2
-  description: ''
-  use_blueprint:
-    path: Blackshome/sensor-light.yaml
-    input:
-      motion_trigger:
-      - binary_sensor.slpkmr2_sen_huemulti_bardeen_occupancy
-      light_switch:
-        entity_id: light.slpkmr2_lights
-- id: '1734010311135'
-  alias: sensor light wrkmr2
-  description: ''
-  use_blueprint:
-    path: Blackshome/sensor-light.yaml
-    input:
-      motion_trigger:
-      - binary_sensor.wrkmr2_sen_huemulti_lamarr_occupancy
-      light_switch:
-        entity_id: light.wrkmr2_lights
-      time_delay: 10
 - id: '1734010555546'
   alias: sensor light badkmr
   description: ''
@@ -98,17 +66,6 @@
       night_lights:
         entity_id: light.badkmr_lights
       night_time_delay: 1
-- id: '1734010901342'
-  alias: sensor light achttn
-  description: ''
-  use_blueprint:
-    path: Blackshome/sensor-light.yaml
-    input:
-      motion_trigger:
-      - binary_sensor.achttn_sen_huemultioutdoor_bell_occupancy
-      light_switch:
-        entity_id: light.achttn_lux_huewall_maiman
-      time_delay: 1
 - id: '1734011013113'
   alias: sensor light bijkkn
   description: ''
@@ -120,17 +77,6 @@
       light_switch:
         entity_id:
         - light.z2m_bijkkn_lux_group
-- id: '1734011177064'
-  alias: sensor light eetkmr
-  description: ''
-  use_blueprint:
-    path: Blackshome/sensor-light.yaml
-    input:
-      motion_trigger:
-      - binary_sensor.eetkmr_sen_huemulti_curie_occupancy
-      light_switch:
-        entity_id: light.eetkmr_lights
-      time_delay: 10
 - id: '1734011281640'
   alias: sensor light zitkmr
   description: ''
@@ -144,17 +90,6 @@
       time_delay: 30
       ambient_light_sensor: sensor.zitkmr_sen_huemulti_celcius_illuminance
       ambient_light_options: ambient_light_option_enabled
-- id: '1734011640514'
-  alias: sensor light entree
-  description: ''
-  use_blueprint:
-    path: Blackshome/sensor-light.yaml
-    input:
-      motion_trigger:
-      - binary_sensor.entree_occupancy
-      light_switch:
-        entity_id: light.entree_lights
-      time_delay: 3
 - id: '1734012402875'
   alias: sensor light keuken
   description: ''
@@ -165,17 +100,6 @@
       - binary_sensor.keuken_sen_huemulti_halley_occupancy
       light_switch:
         entity_id: light.z2m_keuken_lux_group
-- id: '1734099597452'
-  alias: sensor light closet
-  description: ''
-  use_blueprint:
-    path: Blackshome/sensor-light.yaml
-    input:
-      motion_trigger:
-      - binary_sensor.closet_sen_aqacontact_schrodinger_contact
-      time_delay: 0
-      light_switch:
-        entity_id: light.closet_lights
 - id: '1734099648779'
   alias: sensor light pantry
   description: ''
@@ -183,10 +107,10 @@
     path: Blackshome/sensor-light.yaml
     input:
       motion_trigger:
-      - binary_sensor.pantry_sen_aqacontact_popov_contact
+      - binary_sensor.pantry_occupancy
       light_switch:
-        entity_id: light.pantry_lights
-      time_delay: 0
+        entity_id: light.z2m_pantry_lux_group
+      time_delay: 5
 - id: '1741098879096'
   alias: sensor lights overlp
   description: ''
