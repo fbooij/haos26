@@ -17,10 +17,11 @@
 !glances/
 !includes/
 !notebooks/
-!zigbee2mqtt/
+# !zigbee2mqtt/
 !packages/
 
 # Whitelist specific Lovelace files in the .storage directory
+!zigbee2mqtt/configuration.yaml
 
 # Ensure these YAML files are ignored, otherwise your secret data/credentials will leak.
 html5_push_registrations.conf

@@ -165,6 +165,12 @@ devices:
     friendly_name: eetkmr_pow_aqasock_ohm_heater
   '0x54ef4410000ff1b9':
     friendly_name: zitkmr_pow_aqasock_joule_heater
+  '0x04cf8cdf3c89f257':
+    friendly_name: zitkmr_pow_aqasock_tesla_heater
+  '0x0017880104102670':
+    friendly_name: studio_lux_huebulb_laennec
+  '0x04cf8cdf3c89e786':
+    friendly_name: wrkmr1_pow_aqasock_watt_heater
 blocklist: []
 groups:
   '1':
