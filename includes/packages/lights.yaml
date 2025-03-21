@@ -1,82 +1,82 @@
-light:
-  # # grouped groups
-  - platform: group
-    name: service_lux_group
-    entities:
-      - light.zitkmr_group
-      - light.keuken_group
-      - light.badkmr_group
-  - platform: group
-    name: wookmr_lux_group
-    entities:
-      - light.zitkmr_group
-      - light.eetkmr_group
-      - light.keuken_group
-  - platform: group
-    name: beneden_lux_group
-    entities:
-      - light.wookmr_group
-      - light.bijkkn_group
-  - platform: group
-    name: boven_lux_group
-    entities:
-      - light.slpkmr_group
-      - light.overlp_group
-      - light.badkmr_group
-      - light.wrkmr1_group
+# light:
+#   # # grouped groups
+#   - platform: group
+#     name: service_lux_group
+#     entities:
+#       - light.zitkmr_group
+#       - light.keuken_group
+#       - light.badkmr_group
+#   - platform: group
+#     name: wookmr_lux_group
+#     entities:
+#       - light.zitkmr_group
+#       - light.eetkmr_group
+#       - light.keuken_group
+#   - platform: group
+#     name: beneden_lux_group
+#     entities:
+#       - light.wookmr_group
+#       - light.bijkkn_group
+#   - platform: group
+#     name: boven_lux_group
+#     entities:
+#       - light.slpkmr_group
+#       - light.overlp_group
+#       - light.badkmr_group
+#       - light.wrkmr1_group
 
-  # # studio
-  - platform: group
-    name: studio_lux_group
-    entities:
-      - light.studio_lux_huebulb_marcelin
-      - light.studio_lux_huebulb_reaumur
-      - light.studio_lux_huebulb_shannon
-      - light.studio_lux_livdesk_gilbert3
-      - light.studio_lux_livdesk_gilbert4
-  # # beneden
-  - platform: group
-    name: bijkkn_lux_group
-    entities:
-      - light.bijkkn_lux_huebulb_gatso
-  - platform: group
-    name: keuken_lux_group
-    entities:
-      - light.keuken_lux_huebulb_ritchie
-      - light.keuken_lux_huebulb_wiener
-      - light.keuken_lux_huespot_bernasconi
-      - light.keuken_lux_huespot_blondlot
-      - light.keuken_lux_huespot_dubos
-  - platform: group
-    name: zitkmr_lux_group
-    entities:
-      - light.zitkmr_lux_huebulb_gauss
-      - light.zitkmr_lux_huebulb_huygens
-      - light.zitkmr_lux_hueorb_swainson
-      - light.zitkmr_lux_livfloor_gilbert1
-      - light.zitkmr_lux_livfloor_gilbert2
-  # # boven
-  - platform: group
-    name: slpkmr_lux_group
-    entities:
-      - light.slpkmr_lux_huebloom_drexler
-      - light.slpkmr_lux_hueplay_bunsen
-      - light.slpkmr_lux_hueplay_doppler
-      - light.slpkmr_lux_hueplay_kepler
-  - platform: group
-    name: overlp_lux_group
-    entities:
-      - light.overlp_lux_huebulb_knuth
-  - platform: group
-    name: badkmr_lux_group
-    entities:
-      - light.badkmr_lux_ikestoft_gould
-  - platform: group
-    name: wrkmr1_lux_group
-    entities:
-      - light.wrkmr1_lux_ikespot_celcius
-      - light.wrkmr1_lux_ikespot_kelvin
-      - light.wrkmr1_lux_ikespot_newton
+#   # # studio
+#   - platform: group
+#     name: studio_lux_group
+#     entities:
+#       - light.studio_lux_huebulb_marcelin
+#       - light.studio_lux_huebulb_reaumur
+#       - light.studio_lux_huebulb_shannon
+#       - light.studio_lux_livdesk_gilbert3
+#       - light.studio_lux_livdesk_gilbert4
+#   # # beneden
+#   - platform: group
+#     name: bijkkn_lux_group
+#     entities:
+#       - light.bijkkn_lux_huebulb_gatso
+#   - platform: group
+#     name: keuken_lux_group
+#     entities:
+#       - light.keuken_lux_huebulb_ritchie
+#       - light.keuken_lux_huebulb_wiener
+#       - light.keuken_lux_huespot_bernasconi
+#       - light.keuken_lux_huespot_blondlot
+#       - light.keuken_lux_huespot_dubos
+#   - platform: group
+#     name: zitkmr_lux_group
+#     entities:
+#       - light.zitkmr_lux_huebulb_gauss
+#       - light.zitkmr_lux_huebulb_huygens
+#       - light.zitkmr_lux_hueorb_swainson
+#       - light.zitkmr_lux_livfloor_gilbert1
+#       - light.zitkmr_lux_livfloor_gilbert2
+#   # # boven
+#   - platform: group
+#     name: slpkmr_lux_group
+#     entities:
+#       - light.slpkmr_lux_huebloom_drexler
+#       - light.slpkmr_lux_hueplay_bunsen
+#       - light.slpkmr_lux_hueplay_doppler
+#       - light.slpkmr_lux_hueplay_kepler
+#   - platform: group
+#     name: overlp_lux_group
+#     entities:
+#       - light.overlp_lux_huebulb_knuth
+#   - platform: group
+#     name: badkmr_lux_group
+#     entities:
+#       - light.badkmr_lux_ikestoft_gould
+#   - platform: group
+#     name: wrkmr1_lux_group
+#     entities:
+#       - light.wrkmr1_lux_ikespot_celcius
+#       - light.wrkmr1_lux_ikespot_kelvin
+#       - light.wrkmr1_lux_ikespot_newton
 # # buiten
 
 ###
