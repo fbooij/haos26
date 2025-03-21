@@ -247,7 +247,7 @@
   transition: 45
   initial_transition: 1
   interval: 90
-  min_brightness: 40
+  min_brightness: 75
   max_brightness: 100
   min_color_temp: 2000
   max_color_temp: 4000
@@ -266,19 +266,43 @@
   transition: 45
   initial_transition: 1
   interval: 90
-  min_brightness: 5
-  max_brightness: 85
-  min_color_temp: 2000
+  min_brightness: 50
+  max_brightness: 100
+  # min_color_temp: 2000
   max_color_temp: 6535
   sleep_rgb_or_color_temp: rgb_color # Use either "rgb_color" or "color_temp" in sleep mode.
   sleep_brightness: 5
-  # sleep_color_temp: 2000 # Color temperature in sleep mode (used when sleep_rgb_or_color_temp is color_temp) in Kelvin.
   sleep_rgb_color: [255,0,0]
+  # sleep_color_temp: 2000 # Color temperature in sleep mode (used when sleep_rgb_or_color_temp is color_temp) in Kelvin.
   transition_until_sleep: true # When enabled, Adaptive Lighting will treat sleep settings as the minimum, transitioning to these values after sunset.
-  sunrise_time: "08:30:00"
+  # sunrise_time: "08:30:00"
+  max_sunrise_time: "06:30:00" # Set the latest virtual sunrise time (HH:MM:SS), allowing for earlier sunrises.
+  max_sunset_time: "21:00:00" # Set the latest virtual sunset time (HH:MM:SS), allowing for earlier sunsets.
   take_over_control: true
   detect_non_ha_changes: true
   autoreset_control_seconds: 900
+  only_once: false
+
+- name: "overlp"
+  lights:
+    - light.z2m_overlp_lux_group
+  prefer_rgb_color: false
+  transition: 45
+  initial_transition: 1
+  interval: 90
+  min_brightness: 40
+  max_brightness: 100
+  min_color_temp: 2000
+  max_color_temp: 4000
+  sleep_brightness: 10
+  sleep_rgb_or_color_temp: rgb_color # Use either "rgb_color" or "color_temp" in sleep mode.
+  sleep_rgb_color: [255,0,0]
+  transition_until_sleep: true # When enabled, Adaptive Lighting will treat sleep settings as the minimum, transitioning to these values after sunset.
+  max_sunrise_time: "06:30:00" # latest possible sunrise time
+  max_sunset_time: "21:00:00" # Set the latest virtual sunset time (HH:MM:SS), allowing for earlier sunsets.
+  take_over_control: true
+  detect_non_ha_changes: true # changed to true on 05/08/23
+  autoreset_control_seconds: 900 # added and set to 900 on 05/08/23
   only_once: false
 
 - name: "zitkmrhue"
@@ -290,8 +314,8 @@
   interval: 90
   min_brightness: 35
   max_brightness: 65
-  min_color_temp: 1000
-  max_color_temp: 3500
+  min_color_temp: 2000
+  max_color_temp: 4500
   sleep_brightness: 25
   sleep_color_temp: 1000
   take_over_control: true
@@ -313,21 +337,20 @@
   autoreset_control_seconds: 900
   only_once: false
 
-- name: "overlp"
+- name: "wrkmr1"
   lights:
-    - light.z2m_overlp_lux_group
+    - light.z2m_wrkmr1_lux_group
   prefer_rgb_color: false
   transition: 45
   initial_transition: 1
   interval: 90
-  min_brightness: 40
-  max_brightness: 100
+  min_brightness: 20
+  max_brightness: 80
   min_color_temp: 2000
-  max_color_temp: 4000
-  sleep_brightness: 80
-  sleep_color_temp: 5500
-  max_sunrise_time: "06:30:00" # latest possible sunrise time
+  max_color_temp: 4500
+  sleep_brightness: 25
+  sleep_color_temp: 2000
   take_over_control: true
-  detect_non_ha_changes: true # changed to true on 05/08/23
-  autoreset_control_seconds: 900 # added and set to 900 on 05/08/23
+  detect_non_ha_changes: true
+  autoreset_control_seconds: 900
   only_once: false
