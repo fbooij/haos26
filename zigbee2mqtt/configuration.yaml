@@ -34,7 +34,7 @@ devices:
   '0x00158d008b040482':
     friendly_name: eetkmr_sen_aqatemp_sommer
   '0x54ef4410000fed29':
-    friendly_name: galvani
+    friendly_name: zitkmr_pow_aqasock_galvani_heater
   '0x84ba20fffe830e15':
     friendly_name: zitkmr_lux_livfloor_gilbert1
   '0x0017880102dee36a':
@@ -171,6 +171,10 @@ devices:
     friendly_name: studio_lux_huebulb_laennec
   '0x04cf8cdf3c89e786':
     friendly_name: wrkmr1_pow_aqasock_watt_heater
+  '0x001788010bf8c3b8':
+    friendly_name: zitkmr_lux_huebulb_mccormack
+  '0x001788010bf87e4f':
+    friendly_name: zitkmr_lux_huebulb_montagu
 blocklist: []
 groups:
   '1':

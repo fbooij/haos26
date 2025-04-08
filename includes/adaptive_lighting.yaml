@@ -277,7 +277,8 @@
   transition_until_sleep: true # When enabled, Adaptive Lighting will treat sleep settings as the minimum, transitioning to these values after sunset.
   # sunrise_time: "08:30:00"
   max_sunrise_time: "06:30:00" # Set the latest virtual sunrise time (HH:MM:SS), allowing for earlier sunrises.
-  max_sunset_time: "21:00:00" # Set the latest virtual sunset time (HH:MM:SS), allowing for earlier sunsets.
+  min_sunset_time: "20:00:00"
+  max_sunset_time: "22:00:00" # Set the latest virtual sunset time (HH:MM:SS), allowing for earlier sunsets.
   take_over_control: true
   detect_non_ha_changes: true
   autoreset_control_seconds: 900
@@ -290,7 +291,7 @@
   transition: 45
   initial_transition: 1
   interval: 90
-  min_brightness: 40
+  min_brightness: 75
   max_brightness: 100
   min_color_temp: 2000
   max_color_temp: 4000
@@ -299,7 +300,8 @@
   sleep_rgb_color: [255,0,0]
   transition_until_sleep: true # When enabled, Adaptive Lighting will treat sleep settings as the minimum, transitioning to these values after sunset.
   max_sunrise_time: "06:30:00" # latest possible sunrise time
-  max_sunset_time: "21:00:00" # Set the latest virtual sunset time (HH:MM:SS), allowing for earlier sunsets.
+  min_sunset_time: "20:00:00"
+  max_sunset_time: "22:00:00" # Set the latest virtual sunset time (HH:MM:SS), allowing for earlier sunsets.
   take_over_control: true
   detect_non_ha_changes: true # changed to true on 05/08/23
   autoreset_control_seconds: 900 # added and set to 900 on 05/08/23
