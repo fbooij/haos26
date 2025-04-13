@@ -232,7 +232,7 @@
   max_brightness: 100
   # min_color_temp: 2000
   # max_color_temp: 4000
-  sleep_brightness: 10
+  sleep_brightness: 25
   # sleep_color_temp: 2000
   max_sunrise_time: "05:30:00" # was 0630 (13/11/2025)
   take_over_control: true
@@ -250,9 +250,9 @@
   min_brightness: 75
   max_brightness: 100
   min_color_temp: 2000
-  max_color_temp: 4000
-  sleep_brightness: 80
-  sleep_color_temp: 5500
+  max_color_temp: 5000
+  sleep_brightness: 10
+  sleep_color_temp: 6535
   max_sunrise_time: "06:30:00" # latest possible sunrise time
   take_over_control: true
   detect_non_ha_changes: true # changed to true on 05/08/23
@@ -270,9 +270,9 @@
   max_brightness: 100
   # min_color_temp: 2000
   max_color_temp: 6535
-  sleep_rgb_or_color_temp: rgb_color # Use either "rgb_color" or "color_temp" in sleep mode.
-  sleep_brightness: 5
+  sleep_brightness: 10
   sleep_rgb_color: [255,0,0]
+  sleep_rgb_or_color_temp: rgb_color # Use either "rgb_color" or "color_temp" in sleep mode.
   # sleep_color_temp: 2000 # Color temperature in sleep mode (used when sleep_rgb_or_color_temp is color_temp) in Kelvin.
   transition_until_sleep: true # When enabled, Adaptive Lighting will treat sleep settings as the minimum, transitioning to these values after sunset.
   # sunrise_time: "08:30:00"
@@ -291,13 +291,13 @@
   transition: 45
   initial_transition: 1
   interval: 90
-  min_brightness: 75
+  min_brightness: 50
   max_brightness: 100
   min_color_temp: 2000
   max_color_temp: 4000
   sleep_brightness: 10
-  sleep_rgb_or_color_temp: rgb_color # Use either "rgb_color" or "color_temp" in sleep mode.
   sleep_rgb_color: [255,0,0]
+  sleep_rgb_or_color_temp: rgb_color # Use either "rgb_color" or "color_temp" in sleep mode.
   transition_until_sleep: true # When enabled, Adaptive Lighting will treat sleep settings as the minimum, transitioning to these values after sunset.
   max_sunrise_time: "06:30:00" # latest possible sunrise time
   min_sunset_time: "20:00:00"
@@ -316,10 +316,10 @@
   interval: 90
   min_brightness: 35
   max_brightness: 65
-  min_color_temp: 2000
-  max_color_temp: 4500
-  sleep_brightness: 25
-  sleep_color_temp: 1000
+  min_color_temp: 2002
+  max_color_temp: 4504
+  sleep_brightness: 10
+  sleep_color_temp: 4504
   take_over_control: true
   detect_non_ha_changes: true
   autoreset_control_seconds: 900
@@ -331,9 +331,10 @@
   transition: 45
   initial_transition: 1
   interval: 90
-  min_brightness: 10
+  min_brightness: 25
   max_brightness: 100
   sunset_offset: -7200
+  sleep_brightness: 10
   take_over_control: true
   detect_non_ha_changes: true
   autoreset_control_seconds: 900
@@ -348,10 +349,10 @@
   interval: 90
   min_brightness: 20
   max_brightness: 80
-  min_color_temp: 2000
-  max_color_temp: 4500
-  sleep_brightness: 25
-  sleep_color_temp: 2000
+  # min_color_temp: 2000
+  # max_color_temp: 4500
+  sleep_brightness: 10
+  # sleep_color_temp: 5500
   take_over_control: true
   detect_non_ha_changes: true
   autoreset_control_seconds: 900
