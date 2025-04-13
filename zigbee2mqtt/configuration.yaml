@@ -91,16 +91,10 @@ devices:
     friendly_name: slpkmr_lux_huebloom_drexler
   '0x001788010cd9f99a':
     friendly_name: _wrkmr2_sen_huemulti_lamarr
-  '0x04cd15fffe81741e':
-    friendly_name: '0x04cd15fffe81741e'
   '0x0017880106f7fda9':
     friendly_name: badkmr_sen_huemulti_franklin
-  '0xdc8e95fffe8e9283':
-    friendly_name: '0xdc8e95fffe8e9283'
   '0x001788010329fc00':
     friendly_name: bijkkn_sen_huemulti_babbage
-  '0x0c4314fffeec88cd':
-    friendly_name: '0x0c4314fffeec88cd'
   '0x001788010e6adabb':
     friendly_name: overlp_lux_huebulb_knuth
   '0x001788010e1f19ac':
@@ -139,8 +133,6 @@ devices:
     friendly_name: studio_lux_livdesk_gilbert3
   '0x04cd15fffe789900':
     friendly_name: studio_lux_livdesk_gilbert4
-  '0x000d6ffffe08bb20':
-    friendly_name: '0x000d6ffffe08bb20'
   '0xf0d1b8be2408693d':
     friendly_name: buiten_pow_ledsock_karlstrup
   '0xf0d1b8be240874a8':
@@ -153,14 +145,10 @@ devices:
     friendly_name: toilet_lux_huespot_templeton
   '0x001788010bb534ab':
     friendly_name: toilet_lux_huespot_thompson
-  '0x54ef44100060c226':
-    friendly_name: '0x54ef44100060c226'
   '0x2c1165fffe3008c8':
     friendly_name: pantry_lux_ikebulb_maybach
   '0x001788010412a882':
     friendly_name: closet_lux_ikebulb_planck
-  '0x54ef44100060ac97':
-    friendly_name: '0x54ef44100060ac97'
   '0x04cf8cdf3c8d047f':
     friendly_name: eetkmr_pow_aqasock_ohm_heater
   '0x54ef4410000ff1b9':
@@ -175,6 +163,10 @@ devices:
     friendly_name: zitkmr_lux_huebulb_mccormack
   '0x001788010bf87e4f':
     friendly_name: zitkmr_lux_huebulb_montagu
+  '0x00158d00065a7f28':
+    friendly_name: muir
+  '0x00158d0002c9cde2':
+    friendly_name: stoletov
 blocklist: []
 groups:
   '1':
