@@ -87,9 +87,11 @@
       - binary_sensor.zitkmr_sen_huemulti_celcius_occupancy
       light_switch:
         entity_id: light.z2m_zitkmr_lux_group
-      time_delay: 30
+      time_delay: 15
       ambient_light_sensor: sensor.zitkmr_sen_huemulti_celcius_illuminance
       ambient_light_options: ambient_light_option_enabled
+      ambient_light_value: 220
+      ambient_light_high_value: 270
 - id: '1734012402875'
   alias: sensor light keuken
   description: ''
