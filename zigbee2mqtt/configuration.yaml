@@ -42,7 +42,7 @@ devices:
   '0x0017880102b06a0b':
     friendly_name: zitkmr_lux_huebulb_huygens
   '0x0017880106f7f3d8':
-    friendly_name: closet_sen_huemulti_curie
+    friendly_name: pantry_sen_huemulti_curie
   '0x0017880106f57744':
     friendly_name: keuken_sen_huemulti_halley
   '0x00178801032a1b90':
@@ -51,28 +51,20 @@ devices:
     friendly_name: studio_lux_huebulb_marcelin
   '0x001788010423d9e0':
     friendly_name: studio_lux_huebulb_reaumur
-  '0x5c0272fffe627239':
-    friendly_name: _pow_ikesock_geiger_heater
   '0x385b44fffe1a2d1b':
     friendly_name: slpkmr_pow_ikesock_ockham_heater
   '0x086bd7fffe0042f0':
-    friendly_name: studio_pow_ikesock_talbot
+    friendly_name: studio_pow_ikesock_talbot_heater
   '0x385b44fffe1d770e':
     friendly_name: zitkmr_pow_ikesock_braun
-  '0x000d6ffffeaa2be9':
-    friendly_name: wrkmr1_pow_ikesock_volta_heater
   '0x54ef4410004a686c':
     friendly_name: huberman
   '0xf0d1b8be24086922':
     friendly_name: buiten_pow_ledsock_stroustrup
-  '0x000d6ffffedecccd':
-    friendly_name: kelder_pow_ikesock_farad
   '0x000b3cfffef2a81c':
     friendly_name: kelder_pow_ikesock_whitney
   '0x00178801032a158f':
     friendly_name: wrkmr1_sen_huemulti_copernicus
-  '0x0017880102dee9ab':
-    friendly_name: bijkkn_lux_huebulb_gatso
   '0x001788010b9dad70':
     friendly_name: zitkmr_lux_hueorb_swainson
   '0x0017880104cdc863':
@@ -90,17 +82,11 @@ devices:
   '0x001788010b3f49bd':
     friendly_name: slpkmr_lux_huebloom_drexler
   '0x001788010cd9f99a':
-    friendly_name: _wrkmr2_sen_huemulti_lamarr
+    friendly_name: kelder_sen_huemulti_lamarr
   '0x0017880106f7fda9':
     friendly_name: badkmr_sen_huemulti_franklin
   '0x001788010329fc00':
     friendly_name: bijkkn_sen_huemulti_babbage
-  '0x001788010e6adabb':
-    friendly_name: overlp_lux_huebulb_knuth
-  '0x001788010e1f19ac':
-    friendly_name: keuken_lux_huebulb_ritchie
-  '0x001788010e6ac3b3':
-    friendly_name: keuken_lux_huebulb_wiener
   '0x001788010df9588c':
     friendly_name: overlp_sen_huemulti_alferov
   '0x001788010862ffd2':
@@ -112,7 +98,7 @@ devices:
   '0x0017880106f54afa':
     friendly_name: pantry_sen_huemulti_bernerslee
   '0x001788010df9376b':
-    friendly_name: _sen_huemulti_vanrossum
+    friendly_name: kelder_sen_huemulti_vanrossum
   '0x0017880104ac1670':
     friendly_name: slpkmr_switch_hueswitch_backus
   '0xbc33acfffe0e1b71':
@@ -123,8 +109,6 @@ devices:
     friendly_name: wrkmr1_lux_ikespot_newton
   '0x943469fffe6457b6':
     friendly_name: badkmr_lux_ikestoft_gould
-  '0x00158d0002ec0e29':
-    friendly_name: _sen_aqadoor_popov
   '0x001788010df93f15':
     friendly_name: _sen_huemulti_bardeen
   '0x001788010cd668a0':
@@ -139,22 +123,14 @@ devices:
     friendly_name: buiten_pow_ledsock_laudrup
   '0x00158d0007e02a84':
     friendly_name: kelder_sen_aqadoor_sutton
-  '0xf0d1b8be24086cfb':
-    friendly_name: buiten_pow_ledsock_skovstrup
   '0x001788010bb53f7b':
     friendly_name: toilet_lux_huespot_templeton
   '0x001788010bb534ab':
     friendly_name: toilet_lux_huespot_thompson
-  '0x2c1165fffe3008c8':
-    friendly_name: pantry_lux_ikebulb_maybach
-  '0x001788010412a882':
-    friendly_name: closet_lux_ikebulb_planck
   '0x04cf8cdf3c8d047f':
     friendly_name: eetkmr_pow_aqasock_ohm_heater
-  '0x54ef4410000ff1b9':
-    friendly_name: zitkmr_pow_aqasock_joule_heater
   '0x04cf8cdf3c89f257':
-    friendly_name: zitkmr_pow_aqasock_tesla_heater
+    friendly_name: studio_pow_aqasock_tesla_heater
   '0x0017880104102670':
     friendly_name: studio_lux_huebulb_laennec
   '0x04cf8cdf3c89e786':
@@ -164,9 +140,39 @@ devices:
   '0x001788010bf87e4f':
     friendly_name: zitkmr_lux_huebulb_montagu
   '0x00158d00065a7f28':
-    friendly_name: muir
-  '0x00158d0002c9cde2':
-    friendly_name: stoletov
+    friendly_name: buiten_sen_aqatemp_muir
+  '0x00158d00024030ae':
+    friendly_name: kelder_sen_aqaleak_watson
+  '0x04cd15fffe8171f3':
+    friendly_name: '0x04cd15fffe8171f3'
+  '0x943469fffe642e9b':
+    friendly_name: pantry_lux_ikestoft_schiff
+  '0x385cfbfffe6ca692':
+    friendly_name: pantry_lux_ikestoft_einstein
+  '0x30fb10fffe22e10a':
+    friendly_name: overlp_lux_ikestoft_hall
+  '0x54ef44100070495a':
+    friendly_name: '0x54ef44100070495a'
+  '0x000d6ffffe08bb20':
+    friendly_name: '0x000d6ffffe08bb20'
+  '0x8cf681fffe4de7a0':
+    friendly_name: '0x8cf681fffe4de7a0'
+  '0x001788010bb53f81':
+    friendly_name: toilet_lux_huespot_temporary
+  '0x44e2f8fffef88a66':
+    friendly_name: kelder_lux_ikepanel_langmuir
+  '0x403059fffee6f7b7':
+    friendly_name: keuken_lux_ikestoft_townes
+  '0xd44867fffe8977b9':
+    friendly_name: keuken_lux_ikestoft_schawlow
+  '0x403059fffe4cf7c7':
+    friendly_name: bijkkn_lux_ikestoft_basov
+  '0x403059fffe4cdfb1':
+    friendly_name: wrkmr1_lux_ikestoft_javan
+  '0x403059fffe4cb403':
+    friendly_name: wrkmr2_lux_ikestoft_prokhorov
+  '0x44e2f8fffe4bbfe6':
+    friendly_name: kelder_lux_ikepanel_holonyak
 blocklist: []
 groups:
   '1':

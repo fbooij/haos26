@@ -91,7 +91,7 @@
       ambient_light_sensor: sensor.zitkmr_sen_huemulti_celcius_illuminance
       ambient_light_options: ambient_light_option_enabled
       ambient_light_value: 220
-      ambient_light_high_value: 270
+      ambient_light_high_value: 220
 - id: '1734012402875'
   alias: sensor light keuken
   description: ''
@@ -152,4 +152,15 @@
       - binary_sensor.studio_sen_huemulti_cousteau_occupancy
       light_switch:
         entity_id: light.z2m_studio_lux_group
+      time_delay: 5
+- id: '1745510045501'
+  alias: sensor light kelder
+  description: ''
+  use_blueprint:
+    path: Blackshome/sensor-light.yaml
+    input:
+      motion_trigger:
+      - binary_sensor.kelder_occupancy
+      light_switch:
+        entity_id: light.z2m_kelder_lux_group
       time_delay: 5

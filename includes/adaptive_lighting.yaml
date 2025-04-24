@@ -240,19 +240,21 @@
   autoreset_control_seconds: 900
   only_once: false
 
-- name: "keuken"
+- name: "service"
   lights:
     - light.z2m_keuken_lux_group
-  prefer_rgb_color: false
+    - light.z2m_overlp_lux_group
+    - light.z2m_bijkkn_lux_group
+  # prefer_rgb_color: false
   transition: 45
   initial_transition: 1
   interval: 90
-  min_brightness: 75
-  max_brightness: 100
-  min_color_temp: 2000
-  max_color_temp: 5000
+  min_brightness: 50
+  max_brightness: 75
+  # min_color_temp: 2000
+  # max_color_temp: 5000
   sleep_brightness: 10
-  sleep_color_temp: 6535
+  # sleep_color_temp: 6535
   max_sunrise_time: "06:30:00" # latest possible sunrise time
   take_over_control: true
   detect_non_ha_changes: true # changed to true on 05/08/23
@@ -282,29 +284,6 @@
   take_over_control: true
   detect_non_ha_changes: true
   autoreset_control_seconds: 900
-  only_once: false
-
-- name: "overlp"
-  lights:
-    - light.z2m_overlp_lux_group
-  prefer_rgb_color: false
-  transition: 45
-  initial_transition: 1
-  interval: 90
-  min_brightness: 50
-  max_brightness: 100
-  min_color_temp: 2000
-  max_color_temp: 4000
-  sleep_brightness: 10
-  sleep_rgb_color: [255,0,0]
-  sleep_rgb_or_color_temp: rgb_color # Use either "rgb_color" or "color_temp" in sleep mode.
-  transition_until_sleep: true # When enabled, Adaptive Lighting will treat sleep settings as the minimum, transitioning to these values after sunset.
-  max_sunrise_time: "06:30:00" # latest possible sunrise time
-  min_sunset_time: "20:00:00"
-  max_sunset_time: "22:00:00" # Set the latest virtual sunset time (HH:MM:SS), allowing for earlier sunsets.
-  take_over_control: true
-  detect_non_ha_changes: true # changed to true on 05/08/23
-  autoreset_control_seconds: 900 # added and set to 900 on 05/08/23
   only_once: false
 
 - name: "zitkmrhue"
