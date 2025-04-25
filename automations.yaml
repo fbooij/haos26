@@ -164,3 +164,14 @@
       light_switch:
         entity_id: light.z2m_kelder_lux_group
       time_delay: 5
+- id: '1745585694435'
+  alias: sensor lights entree
+  description: ''
+  use_blueprint:
+    path: Blackshome/sensor-light.yaml
+    input:
+      motion_trigger:
+      - binary_sensor.entree_sen_huemulti_bardeen_occupancy
+      light_switch:
+        entity_id: light.z2m_entree_lux_group
+      time_delay: 5

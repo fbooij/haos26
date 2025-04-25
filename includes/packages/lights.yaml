@@ -104,3 +104,10 @@ template:
         state: >
           {{ is_state('binary_sensor.kelder_sen_huemulti_lamarr_occupancy', 'on') or
             is_state('binary_sensor.kelder_sen_huemulti_vanrossum_occupancy', 'on') }}
+  - binary_sensor:
+      - name: "entree_occupancy" # consolidates two motion sensors into one, for automations
+        unique_id: entree_occupancy
+        device_class: occupancy
+        state: >
+          {{ is_state('binary_sensor.entree_sen_huemulti_bardeen_occupancy', 'on') or
+            is_state('binary_sensor.entree_sen_huemulti_abbott_occupancy', 'on') }}
