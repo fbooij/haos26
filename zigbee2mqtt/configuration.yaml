@@ -15,7 +15,7 @@ frontend:
 ota:
   ikea_ota_use_test_url: false
 advanced:
-  log_level: info
+  log_level: warning
   homeassistant_legacy_entity_attributes: false
   homeassistant_legacy_triggers: false
   legacy_api: false
@@ -29,12 +29,11 @@ devices:
     friendly_name: sonoff_zbdongle-e_router
   '0x00178801064489db':
     friendly_name: voortn_sen_huemultioutdoor_bell
+    description: Philips Hue MultiOutdoor sensor facing front_door
   '0x00158d008b040482':
     friendly_name: eetkmr_sen_aqatemp_sommer
   '0x54ef4410000fed29':
     friendly_name: zitkmr_pow_aqasock_galvani_heater
-  '0x84ba20fffe830e15':
-    friendly_name: zitkmr_lux_livfloor_gilbert1
   '0x0017880102dee36a':
     friendly_name: zitkmr_lux_huebulb_gauss
   '0x0017880102b06a0b':
@@ -59,8 +58,6 @@ devices:
     friendly_name: huberman
   '0xf0d1b8be24086922':
     friendly_name: buiten_pow_ledsock_stroustrup
-  '0x000b3cfffef2a81c':
-    friendly_name: kelder_pow_ikesock_whitney
   '0x00178801032a158f':
     friendly_name: wrkmr1_sen_huemulti_copernicus
   '0x001788010b9dad70':
@@ -90,13 +87,13 @@ devices:
   '0x001788010862ffd2':
     friendly_name: toilet_sen_huemulti_turing
   '0x001788010cd66406':
-    friendly_name: entree_sen_huemulti_abbott
+    friendly_name: kelder_sen_huemulti_vanrossum
   '0x0017880102031631':
     friendly_name: studio_sen_huemulti_cousteau
   '0x0017880106f54afa':
     friendly_name: pantry_sen_huemulti_bernerslee
   '0x001788010df9376b':
-    friendly_name: kelder_sen_huemulti_vanrossum
+    friendly_name: entree_sen_huemulti_abbott
   '0x0017880104ac1670':
     friendly_name: slpkmr_switch_hueswitch_backus
   '0xbc33acfffe0e1b71':
@@ -111,20 +108,12 @@ devices:
     friendly_name: entree_sen_huemulti_bardeen
   '0x001788010cd668a0':
     friendly_name: eetkmr_sen_huemulti_woodhouse
-  '0x04cd15fffea027fd':
-    friendly_name: studio_lux_livdesk_gilbert3
-  '0x04cd15fffe789900':
-    friendly_name: studio_lux_livdesk_gilbert4
   '0xf0d1b8be2408693d':
     friendly_name: buiten_pow_ledsock_karlstrup
   '0xf0d1b8be240874a8':
     friendly_name: buiten_pow_ledsock_laudrup
-  '0x00158d0007e02a84':
-    friendly_name: kelder_sen_aqadoor_sutton
   '0x001788010bb53f7b':
     friendly_name: toilet_lux_huespot_templeton
-  '0x04cf8cdf3c8d047f':
-    friendly_name: eetkmr_pow_aqasock_ohm_heater
   '0x04cf8cdf3c89f257':
     friendly_name: studio_pow_aqasock_tesla_heater
   '0x0017880104102670':
@@ -135,24 +124,10 @@ devices:
     friendly_name: zitkmr_lux_huebulb_mccormack
   '0x001788010bf87e4f':
     friendly_name: zitkmr_lux_huebulb_montagu
-  '0x00158d00065a7f28':
-    friendly_name: buiten_sen_aqatemp_muir
-  '0x00158d00024030ae':
-    friendly_name: kelder_sen_aqaleak_watson
-  '0x04cd15fffe8171f3':
-    friendly_name: '0x04cd15fffe8171f3'
   '0x943469fffe642e9b':
     friendly_name: pantry_lux_ikestoft_schiff
-  '0x385cfbfffe6ca692':
-    friendly_name: pantry_lux_ikestoft_einstein
   '0x30fb10fffe22e10a':
     friendly_name: overlp_lux_ikestoft_hall
-  '0x54ef44100070495a':
-    friendly_name: '0x54ef44100070495a'
-  '0x000d6ffffe08bb20':
-    friendly_name: '0x000d6ffffe08bb20'
-  '0x8cf681fffe4de7a0':
-    friendly_name: '0x8cf681fffe4de7a0'
   '0x001788010bb53f81':
     friendly_name: toilet_lux_huespot_thompson
   '0x44e2f8fffef88a66':
@@ -163,32 +138,75 @@ devices:
     friendly_name: keuken_lux_ikestoft_schawlow
   '0x403059fffe4cf7c7':
     friendly_name: bijkkn_lux_ikestoft_basov
-  '0x403059fffe4cdfb1':
-    friendly_name: wrkmr1_lux_ikestoft_javan
-  '0x403059fffe4cb403':
-    friendly_name: wrkmr2_lux_ikestoft_prokhorov
   '0x44e2f8fffe4bbfe6':
     friendly_name: kelder_lux_ikepanel_holonyak
-  '0x0c4314fffeec88cd':
-    friendly_name: '0x0c4314fffeec88cd'
   '0x44e2f8fffe4bbf54':
     friendly_name: kelder_lux_ikepanel_biard
   '0x0017880106fc8a23':
     friendly_name: achttn_lux_hueflood_davy
-  '0x54ef44100060ac97':
-    friendly_name: '0x54ef44100060ac97'
-  '0x54ef44100060c226':
-    friendly_name: '0x54ef44100060c226'
   '0x001788010ee4511d':
     friendly_name: slpkmr_lux_huespot_amano
   '0x001788010eec4290':
     friendly_name: slpkmr_lux_huespot_nakamura
   '0x001788010ee45994':
     friendly_name: slpkmr_lux_huespot_akasaki
-  '0x003c84fffe6a9791':
-    friendly_name: entree_lux_livfloor_gilbert2
   '0x001788010e7eda21':
     friendly_name: entree_lux_huebeing_coolidge
+  '0xf0d1b8be24086cfb':
+    friendly_name: steiger_pow_ledsock_ekstrup
+  '0x00158d0007e02a84':
+    friendly_name: kelder_sen_aqadoor_sutton
+  '0x54ef4410000ff1b9':
+    friendly_name: kelder_pow_aqasock_ohm
+  '0x04cf8cdf3c8d047f':
+    friendly_name: studio_pow_aqasock_joule
+  '0x00158d0002ec0ccb':
+    friendly_name: unknown_schrodinger
+  '0x00158d0003498551':
+    friendly_name: kelder_sen_aqatemp_stihl
+  '0x403059fffe4cdfb1':
+    friendly_name: wrkmr1_lux_ikestoft_javan
+  '0x403059fffe4cb403':
+    friendly_name: wrkmr2_lux_ikestoft_prokhorov
+  '0x385cfbfffe6ca692':
+    friendly_name: pantry_lux_ikestoft_einstein
+  '0x00158d0002ec0e29':
+    friendly_name: popov
+  '0x00158d00036bd4e2':
+    friendly_name: kelder_sen_aqatemp_lans
+  '0x54ef44100070495a':
+    friendly_name: '0x54ef44100070495a'
+  '0x00158d00024030ae':
+    friendly_name: kelder_sen_aqaleak_watson
+  '0x00158d000af3945f':
+    friendly_name: achttn_sen_aqatemp_maxim
+  '0x04cd15fffe8171f3':
+    friendly_name: '0x04cd15fffe8171f3'
+  '0x04cd15fffe81741e':
+    friendly_name: '0x04cd15fffe81741e'
+  '0x0017880106473c83':
+    friendly_name: achttn_sen_huemultioutdoor_herschel
+    description: Philips Hue MultiOutdoor sensor facing picknick_table
+  '0x001788010df771e5':
+    friendly_name: achttn_sen_huemultioutdoor_townes
+    description: Philips Hue MultiOutdoor sensor facing back_door
+  '0x001788010df7720c':
+    friendly_name: achttn_sen_huemultioutdoor_weber
+    description: Philips Hue MultiOutdoor sensor facing sauna
+  '0x0c4314fffeec88cd':
+    friendly_name: '0x0c4314fffeec88cd'
+  '0x8cf681fffe4de7a0':
+    friendly_name: '0x8cf681fffe4de7a0'
+  '0x54ef44100060c226':
+    friendly_name: '0x54ef44100060c226'
+  '0x54ef44100060ac97':
+    friendly_name: '0x54ef44100060ac97'
+  '0xffffb40e0600b3ea':
+    friendly_name: achttn_sen_3rdmoist_borlaug
+  '0x001788010e8a1647':
+    friendly_name: wrkmr2_switch_hueswitch_gelding
+  '0x54ef4410008c45a1':
+    friendly_name: '0x54ef4410008c45a1'
 blocklist: []
 groups:
   '1':
@@ -225,4 +243,6 @@ groups:
     friendly_name: z2m_zitkmrliv_lux_group
   '17':
     friendly_name: z2m_pantry_lux_group
+  '18':
+    friendly_name: z2m_achttn_lux_group
 version: 4

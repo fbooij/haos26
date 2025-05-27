@@ -88,7 +88,11 @@
 #         state: >
 #           {{ is_state('binary_sensor.entree_sen_huemulti_babbage_occupancy', 'on') or
 #              is_state('binary_sensor.entree_sen_huemulti_woodhouse_occupancy', 'on') }}
-
+light:
+  - platform: switch
+    name: z2m_sauna_virtual_lux_group
+    entity_id: switch.buiten_pow_ledsock_stroustrup
+    
 template:
   - binary_sensor:
       - name: "pantry_occupancy" # consolidates two motion sensors into one, for automations
@@ -111,3 +115,26 @@ template:
         state: >
           {{ is_state('binary_sensor.entree_sen_huemulti_bardeen_occupancy', 'on') or
             is_state('binary_sensor.entree_sen_huemulti_abbott_occupancy', 'on') }}
+  - binary_sensor:
+      - name: "keuken_occupancy" # consolidates two motion sensors into one, for automations
+        unique_id: keuken_occupancy
+        device_class: occupancy
+        state: >
+          {{ is_state('binary_sensor.keuken_sen_huemulti_halley_occupancy', 'on') or
+            is_state('binary_sensor.eetkmr_sen_huemulti_woodhouse_occupancy', 'on') }}
+  - binary_sensor:
+      - name: "achttn_occupancy" # consolidates two motion sensors into one, for automations
+        unique_id: achttn_occupancy
+        device_class: occupancy
+        state: >
+          {{ is_state('binary_sensor.achttn_sen_huemultioutdoor_herschel_occupancy', 'on') or
+            is_state('binary_sensor.achttn_sen_huemultioutdoor_townes_occupancy', 'on') or
+            is_state('binary_sensor.achttn_sen_huemultioutdoor_weber_occupancy', 'on') }}
+  - binary_sensor:
+      - name: "sauna_occupancy" # consolidates two motion sensors into one, for automations
+        unique_id: sauna_occupancy
+        device_class: occupancy
+        state: >
+          {{ is_state('binary_sensor.eetkmr_sen_huemulti_woodhouse_occupancy', 'on') or
+            is_state('binary_sensor.achttn_sen_huemultioutdoor_weber_occupancy', 'on') }}
+

@@ -9,20 +9,6 @@
   - action: rest_command.betterstack_heartbeat
     data: {}
   mode: single
-- id: '1733774853058'
-  alias: sensor light wrkmr1
-  description: ''
-  use_blueprint:
-    path: Blackshome/sensor-light.yaml
-    input:
-      motion_trigger:
-      - binary_sensor.wrkmr1_sen_huemulti_copernicus_occupancy
-      light_switch:
-        entity_id: light.z2m_wrkmr1_lux_group
-      time_delay: 15
-      include_ambient: ambient_enabled
-      ambient_light_sensor: sensor.wrkmr1_sen_huemulti_copernicus_illuminance
-      ambient_light_options: ambient_light_option_enabled
 - id: notify_slack_on_ha_restart
   alias: Notify Slack on HA Restart
   description: Send a debug message to Slack when HA restarts
@@ -37,6 +23,20 @@
         %H:%M:%S'') }}`
 
         '
+- id: '1733774853058'
+  alias: sensor light wrkmr1
+  description: ''
+  use_blueprint:
+    path: Blackshome/sensor-light.yaml
+    input:
+      motion_trigger:
+      - binary_sensor.wrkmr1_sen_huemulti_copernicus_occupancy
+      light_switch:
+        entity_id: light.z2m_wrkmr1_lux_group
+      time_delay: 5
+      include_ambient: ambient_enabled
+      ambient_light_sensor: sensor.wrkmr1_sen_huemulti_copernicus_illuminance
+      ambient_light_options: ambient_light_option_enabled
 - id: '1733777620780'
   alias: sensor light toilet
   description: ''
@@ -47,6 +47,7 @@
       - binary_sensor.toilet_sen_huemulti_turing_occupancy
       light_switch:
         entity_id: light.z2m_toilet_lux_group
+      time_delay: 2
 - id: '1734010555546'
   alias: sensor light badkmr
   description: ''
@@ -57,7 +58,7 @@
       - binary_sensor.badkmr_sen_huemulti_franklin_occupancy
       light_switch:
         entity_id: light.z2m_badkmr_lux_group
-      time_delay: 10
+      time_delay: 8
       include_night_lights: night_lights_enabled
       night_lights_conditions:
       - entity_state_enabled
@@ -77,6 +78,7 @@
       light_switch:
         entity_id:
         - light.z2m_bijkkn_lux_group
+      time_delay: 2
 - id: '1734011281640'
   alias: sensor light zitkmr
   description: ''
@@ -90,8 +92,9 @@
       time_delay: 15
       ambient_light_sensor: sensor.zitkmr_sen_huemulti_celcius_illuminance
       ambient_light_options: ambient_light_option_enabled
-      ambient_light_value: 220
+      ambient_light_value: 200
       ambient_light_high_value: 220
+      include_ambient: ambient_enabled
 - id: '1734012402875'
   alias: sensor light keuken
   description: ''
@@ -99,9 +102,15 @@
     path: Blackshome/sensor-light.yaml
     input:
       motion_trigger:
-      - binary_sensor.keuken_sen_huemulti_halley_occupancy
+      - binary_sensor.keuken_occupancy
       light_switch:
         entity_id: light.z2m_keuken_lux_group
+      time_delay: 5
+      include_ambient: ambient_enabled
+      ambient_light_sensor: sensor.keuken_sen_huemulti_halley_illuminance
+      ambient_light_value: 100
+      ambient_light_high_value: 150
+      ambient_light_options: ambient_light_option_enabled
 - id: '1734099648779'
   alias: sensor light pantry
   description: ''
@@ -112,7 +121,7 @@
       - binary_sensor.pantry_occupancy
       light_switch:
         entity_id: light.z2m_pantry_lux_group
-      time_delay: 5
+      time_delay: 1
 - id: '1741098879096'
   alias: sensor lights overlp
   description: ''
@@ -123,6 +132,12 @@
       - binary_sensor.overlp_sen_huemulti_alferov_occupancy
       light_switch:
         entity_id: light.z2m_overlp_lux_group
+      time_delay: 2
+      include_ambient: ambient_enabled
+      ambient_light_sensor: sensor.overlp_sen_huemulti_alferov_illuminance
+      ambient_light_value: 250
+      ambient_light_high_value: 500
+      ambient_light_options: ambient_light_option_enabled
 - id: '1741101160785'
   alias: button light slpkmr
   description: ''
@@ -142,6 +157,41 @@
         data: {}
         target:
           entity_id: light.z2m_slpkmr_lux_group
+- id: '1741101160786'
+  alias: button light wrkmr2
+  description: ''
+  use_blueprint:
+    path: patpac9/Hue_Dimmer_Switch_Easy_Custom_Buttons.yaml
+    input:
+      controller: wrkmr2_switch_hueswitch_gelding
+      on_released:
+      - action: light.turn_on
+        metadata: {}
+        data: {}
+        target:
+          entity_id: light.z2m_wrkmr2_lux_group
+      off_released:
+      - action: light.turn_off
+        metadata: {}
+        data: {}
+        target:
+          entity_id: light.z2m_wrkmr2_lux_group
+      down_released:
+      - service: light.turn_on
+        metadata: {}
+        data:
+          brightness_step_pct: -20
+          transition: 2
+        target:
+          entity_id: light.z2m_wrkmr2_lux_group
+      up_released:
+      - service: light.turn_on
+        metadata: {}
+        data:
+          brightness_step_pct: 20
+          transition: 2
+        target:
+          entity_id: light.z2m_wrkmr2_lux_group
 - id: '1741103286010'
   alias: sensor light studio
   description: ''
@@ -153,8 +203,57 @@
       light_switch:
         entity_id: light.z2m_studio_lux_group
       time_delay: 5
-- id: '1745510045501'
-  alias: sensor light kelder
+- id: '1745585694435'
+  alias: sensor lights entree
+  description: ''
+  use_blueprint:
+    path: Blackshome/sensor-light.yaml
+    input:
+      motion_trigger:
+      - binary_sensor.entree_occupancy
+      light_switch:
+        entity_id: light.z2m_entree_lux_group
+      time_delay: 2
+      include_ambient: ambient_enabled
+      ambient_light_sensor: sensor.entree_sen_huemulti_bardeen_illuminance
+      ambient_light_options: ambient_light_option_enabled
+      ambient_light_value: 150
+      ambient_light_high_value: 250
+- id: '1747688006282'
+  alias: sensor lights achttn
+  description: ''
+  use_blueprint:
+    path: Blackshome/sensor-light.yaml
+    input:
+      motion_trigger:
+      - binary_sensor.achttn_occupancy
+      light_switch:
+        entity_id: light.achttn_lux_hueflood_davy
+      time_delay: 1
+      include_ambient: ambient_enabled
+      ambient_light_sensor: sensor.achttn_sen_huemultioutdoor_weber_illuminance
+      ambient_light_options: ambient_light_option_enabled
+      ambient_light_value: 10
+      ambient_light_high_value: 30
+- id: '1747863852547'
+  alias: sensor lights sauna
+  description: ''
+  use_blueprint:
+    path: Blackshome/sensor-light.yaml
+    input:
+      motion_trigger:
+      - binary_sensor.sauna_occupancy
+      include_ambient: ambient_enabled
+      ambient_light_sensor: sensor.achttn_sen_huemultioutdoor_weber_illuminance
+      ambient_light_options: ambient_light_option_enabled
+      ambient_light_value: 10
+      ambient_light_high_value: 50
+      light_switch:
+        entity_id:
+        - light.z2m_sauna_virtual_lux_group
+      time_delay: 15
+- id: '1748288187441'
+  alias: sensor lights kelder
   description: ''
   use_blueprint:
     path: Blackshome/sensor-light.yaml
@@ -163,15 +262,3 @@
       - binary_sensor.kelder_occupancy
       light_switch:
         entity_id: light.z2m_kelder_lux_group
-      time_delay: 5
-- id: '1745585694435'
-  alias: sensor lights entree
-  description: ''
-  use_blueprint:
-    path: Blackshome/sensor-light.yaml
-    input:
-      motion_trigger:
-      - binary_sensor.entree_sen_huemulti_bardeen_occupancy
-      light_switch:
-        entity_id: light.z2m_entree_lux_group
-      time_delay: 5
