@@ -114,7 +114,8 @@ template:
         device_class: occupancy
         state: >
           {{ is_state('binary_sensor.entree_sen_huemulti_bardeen_occupancy', 'on') or
-            is_state('binary_sensor.entree_sen_huemulti_abbott_occupancy', 'on') }}
+            is_state('binary_sensor.entree_sen_huemulti_abbott_occupancy', 'on') or
+            is_state('binary_sensor.r25_doorbell_person', 'on') }}
   - binary_sensor:
       - name: "keuken_occupancy" # consolidates two motion sensors into one, for automations
         unique_id: keuken_occupancy
