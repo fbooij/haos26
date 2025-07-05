@@ -123,7 +123,7 @@
         entity_id: light.z2m_pantry_lux_group
       time_delay: 1
 - id: '1741098879096'
-  alias: sensor lights overlp
+  alias: sensor light overlp
   description: ''
   use_blueprint:
     path: Blackshome/sensor-light.yaml
@@ -204,7 +204,7 @@
         entity_id: light.z2m_studio_lux_group
       time_delay: 5
 - id: '1745585694435'
-  alias: sensor lights entree
+  alias: sensor light entree
   description: ''
   use_blueprint:
     path: Blackshome/sensor-light.yaml
@@ -215,12 +215,12 @@
         entity_id: light.z2m_entree_lux_group
       time_delay: 2
       include_ambient: ambient_enabled
-      ambient_light_sensor: sensor.entree_sen_huemulti_bardeen_illuminance
+      ambient_light_sensor: sensor.entree_illuminance
       ambient_light_options: ambient_light_option_enabled
-      ambient_light_value: 150
-      ambient_light_high_value: 250
+      ambient_light_value: 70
+      ambient_light_high_value: 150
 - id: '1747688006282'
-  alias: sensor lights achttn
+  alias: sensor light achttn
   description: ''
   use_blueprint:
     path: Blackshome/sensor-light.yaml
@@ -236,7 +236,7 @@
       ambient_light_value: 10
       ambient_light_high_value: 30
 - id: '1747863852547'
-  alias: sensor lights sauna
+  alias: sensor light sauna
   description: ''
   use_blueprint:
     path: Blackshome/sensor-light.yaml
@@ -253,7 +253,7 @@
         - light.z2m_sauna_virtual_lux_group
       time_delay: 15
 - id: '1748288187441'
-  alias: sensor lights kelder
+  alias: sensor light kelder
   description: ''
   use_blueprint:
     path: Blackshome/sensor-light.yaml
@@ -262,3 +262,52 @@
       - binary_sensor.kelder_occupancy
       light_switch:
         entity_id: light.z2m_kelder_lux_group
+- id: '1750258673697'
+  alias: sensor light kelder override
+  description: ''
+  triggers:
+  - trigger: state
+    entity_id:
+    - binary_sensor.kelder_occupancy
+    from: 'on'
+    to: 'off'
+  conditions:
+  - condition: state
+    entity_id: binary_sensor.kelder_sen_3rdtilt_tiltstra_contact
+    state: 'on'
+  actions:
+  - type: turn_off
+    device_id: a5153a57e87585a2906ffccf2bfef739
+    entity_id: 7a8f6b7afc7a3bd61b749ab891f67255
+    domain: light
+  mode: single
+- id: '1751145004347'
+  alias: Button Light Wingquist On
+  triggers:
+  - entity_id: event.wingquist_action
+    to:
+    trigger: state
+  conditions:
+  - condition: template
+    value_template: '{{ state_attr(''event.wingquist_action'', ''event_type'') ==
+      ''on'' }}'
+  actions:
+  - target:
+      entity_id: light.z2m_wrkmr1_lux_group
+    action: light.turn_on
+  mode: single
+- id: '1751145041342'
+  alias: Button Light Wingquist Off
+  triggers:
+  - entity_id: event.wingquist_action
+    to:
+    trigger: state
+  conditions:
+  - condition: template
+    value_template: '{{ state_attr(''event.wingquist_action'', ''event_type'') ==
+      ''off'' }}'
+  actions:
+  - target:
+      entity_id: light.z2m_wrkmr1_lux_group
+    action: light.turn_off
+  mode: single

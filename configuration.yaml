@@ -33,8 +33,6 @@ mqtt:
       device_class: connectivity
       qos: 1
 
-#
-
 remote_homeassistant: # necessary for Websocket connection with homeassistant.local
   instances:
 

@@ -3,13 +3,13 @@
         "state": "ON",
         "brightness": 190,
         "color_mode": "color_temp",
-        "color_temp": 443
+        "color_temp": 454
     },
     "2": {
         "state": "ON",
         "brightness": 190,
         "color_mode": "color_temp",
-        "color_temp": 443
+        "color_temp": 454
     },
     "3": {
         "state": "OFF",
@@ -93,14 +93,14 @@
         "linkquality": 255,
         "brightness": 190,
         "color_mode": "color_temp",
-        "color_temp": 443
+        "color_temp": 454
     },
     "0x0017880102b06a0b": {
         "state": "ON",
         "linkquality": 255,
         "brightness": 190,
         "color_mode": "color_temp",
-        "color_temp": 443
+        "color_temp": 454
     },
     "0x0017880104cdc85f": {
         "state": "OFF",
@@ -174,7 +174,7 @@
         "state": "ON",
         "brightness": 190,
         "color_mode": "color_temp",
-        "color_temp": 443,
+        "color_temp": 454,
         "update": {
             "state": "idle",
             "installed_version": 16786690,
@@ -186,7 +186,7 @@
         "brightness": 190,
         "state": "ON",
         "color_mode": "color_temp",
-        "color_temp": 443,
+        "color_temp": 454,
         "update": {
             "state": "idle",
             "installed_version": 16786690,
@@ -198,7 +198,7 @@
         "brightness": 190,
         "state": "ON",
         "color_mode": "color_temp",
-        "color_temp": 443,
+        "color_temp": 454,
         "update": {
             "state": "idle",
             "installed_version": 16786690,
@@ -543,7 +543,7 @@
         "linkquality": 255
     },
     "0x001788010df771e5": {
-        "illuminance": 6,
+        "illuminance": 7,
         "linkquality": 255,
         "occupancy": false,
         "temperature": 19.69,
@@ -581,7 +581,7 @@
     "0x001788010df9376b": {
         "illuminance": 1,
         "occupancy": false,
-        "temperature": 21.36,
+        "temperature": 21.08,
         "linkquality": 255,
         "update": {
             "state": "idle",
@@ -632,7 +632,7 @@
     },
     "0x7c3e8200f7b30000": {
         "temperature": 18.19,
-        "humidity": 71.91,
+        "humidity": 72.03,
         "update": {
             "state": "idle",
             "installed_version": 47,
