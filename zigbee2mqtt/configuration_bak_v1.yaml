@@ -1,0 +1,202 @@
+homeassistant:
+  legacy_entity_attributes: true
+mqtt:
+  server: mqtt://core-mosquitto:1883
+  user: addons
+  password: thai1abeiM8Apahth5eereez5dooquaa5oojoangeedei9Einiesh1Faijeija6j
+serial:
+  port: /dev/ttyACM0
+  adapter: deconz
+frontend:
+  port: 8099
+ota:
+  ikea_ota_use_test_url: true
+advanced:
+  homeassistant_legacy_entity_attributes: false
+  legacy_api: false
+  legacy_availability_payload: false
+  log_level: info
+device_options:
+  legacy: false
+devices:
+  '0x04cf8cdf3c89f257':
+    friendly_name: tesla
+  '0x04cf8cdf3c89e786':
+    friendly_name: watt
+  '0x54ef4410000fed29':
+    friendly_name: galvani
+  '0x8cf681fffe4de7a0':
+    friendly_name: pascal
+  '0x00158d0002c9cde2':
+    friendly_name: stoletov
+  '0x00158d00031b46fb':
+    friendly_name: carson
+  '0x385b44fffe1a2d1b':
+    friendly_name: ockham_wrkmr1_heater
+  '0xe0798dfffed1b802':
+    friendly_name: sonoff zbdongle-e router
+  '0x000d6ffffeaa2be9':
+    friendly_name: volta_wookmr_heater
+  '0xd0cf5efffeb43eeb':
+    friendly_name: tradfri dimmer
+  '0x04cf8cdf3c8d047f':
+    friendly_name: ohm
+  '0x00158d0002ec0e29':
+    friendly_name: pantry_sen_aqacontact_popov
+  '0x00158d0002ec0ccb':
+    friendly_name: closet_sen_aqacontact_schrödinger
+  '0x086bd7fffe0042f0':
+    friendly_name: talbot
+  '0x54ef4410000ff1b9':
+    friendly_name: joule
+  '0x00158d00036bd4e2':
+    friendly_name: lans
+  '0x00158d0002ad8fb6':
+    friendly_name: shima
+  '0x000d6ffffedecccd':
+    friendly_name: farad_wookmr_heater
+  '0x000d6ffffee80905':
+    friendly_name: sherman
+  '0xdc8e95fffe8e9283':
+    friendly_name: strickland
+  '0x54ef4410004a686c':
+    friendly_name: huberman
+    description: Aqara Roller Shade Driver E1
+  '0x54ef44100060ac97':
+    friendly_name: kahneman
+  '0x04cd15fffe81741e':
+    friendly_name: grandin
+  '0x04cd15fffe8171f3':
+    friendly_name: earle
+  '0x000d6ffffe08bb20':
+    friendly_name: farnsworth
+  '0x0c4314fffeec88cd':
+    friendly_name: elmqvist
+  '0xa4c1382bba94809f':
+    friendly_name: MHCOZY TYZG
+  '0x04cf8cdf3c7c21ad':
+    friendly_name: leeuwenhoek
+  '0x086bd7fffe076257':
+    friendly_name: keuken-lux-ikedriver-newton
+  '0x000b57fffe8f0358':
+    friendly_name: keuken-lux-ikecandle-pasteur
+  '0x000b57fffe950220':
+    friendly_name: keuken-lux-ikecandle-pascal
+  '0x000d6ffffeff2f55':
+    friendly_name: bijkkn-lux-ikedriver-morse
+  '0x00158d0002f3c815':
+    friendly_name: faraday
+  '0x00158d0003498551':
+    friendly_name: stihl
+  '0x0017880103be04bf':
+    friendly_name: slpkmr2-lux-huecandle-muller
+  '0x54ef44100060c226':
+    friendly_name: harris
+  '0x54ef44100070495a':
+    friendly_name: aqara_radiator_valve
+  '0x04cf8cdf3c7d96d2':
+    friendly_name: '0x04cf8cdf3c7d96d2'
+  '0x04cf8cdf3c7c0963':
+    friendly_name: '0x04cf8cdf3c7c0963'
+  '0x54ef4410008c45a1':
+    friendly_name: '0x54ef4410008c45a1'
+  '0x5c0272fffe627239':
+    friendly_name: geiger_wrkmr2_heater
+  '0x000b3cfffef2a81c':
+    friendly_name: whitney_slpkmr2_heater
+  '0x001788010df93f15':
+    friendly_name: slpkmr2_sen_huemulti_bardeen
+  '0x385cfbfffe6ca692':
+    friendly_name: badkmr_lux_ikestoft_baer
+  '0x0017880106f7fda9':
+    friendly_name: badkmr_sen_huemulti_franklin_motion
+  '0x0017880102031631':
+    friendly_name: overlp_sen_huemulti_cousteau
+  '0x943469fffe642e9b':
+    friendly_name: overlp_lux_ikestoft_boyle
+  '0x001788010cd9f99a':
+    friendly_name: wrkmr2_sen_huemulti_lamarr
+  '0x00178801032a158f':
+    friendly_name: wrkmr1_sen_huemulti_copernicus
+  '0x00178801042ece9d':
+    friendly_name: wrkmr1_lux_huepanel_davinci
+  '0x001788010b3f49bd':
+    friendly_name: wrkmr1_lux_huebloom_drexler
+  '0x00178801064022fb':
+    friendly_name: wrkmr1_lux_hueplay_doppler
+  '0x0017880106400af9':
+    friendly_name: wrkmr1_lux_hueplay_kepler
+  '0x001788010628c330':
+    friendly_name: wrkmr2_lux_huepanel_wright
+  '0x0017880102dee9ab':
+    friendly_name: zolder_lux_huebulb_gatsonides
+  '0x0017880109ea9306':
+    friendly_name: slpkmr1_lux_hueplay_bunsen
+  '0x00178801032a1b90':
+    friendly_name: zitkmr_sen_huemulti_celcius
+  '0x001788010b2deaa6':
+    friendly_name: pantry_lux_huewhite_leclerc
+  '0x001788010412a882':
+    friendly_name: closet_lux_huewhite_planck
+  '0x0017880102b06a0b':
+    friendly_name: zitkmr_lux_huebulb_huygens
+  '0x0017880103be04c5':
+    friendly_name: zitkmr_lux_huecandle_lister
+  '0x0017880102dee36a':
+    friendly_name: zitkmr_lux_huebulb_gauss
+  '0x001788010bf87e4f':
+    friendly_name: eetkmr_lux_huebulb_montagu
+  '0x001788010bf8c3b8':
+    friendly_name: eetkmr_lux_huebulb_mccormack
+  '0x0017880106bd123e':
+    friendly_name: eetkmr_lux_huecandle_florey
+  '0x0017880106f7f3d8':
+    friendly_name: eetkmr_sen_huemulti_curie
+  '0x001788010b9dad70':
+    friendly_name: slpkmr2_lux_hueorb_swainson
+  '0xbc33acfffe0e1b71':
+    friendly_name: slpkmr2_lux_ikespot_kelvin
+  '0xbc33acfffe13994a':
+    friendly_name: slpkmr2_lux_ikespot_newton
+  '0xbc33acfffe0ce18c':
+    friendly_name: slpkmr2_lux_ikespot_celcius
+  '0x001788010cd668a0':
+    friendly_name: entree_sen_huemulti_woodhouse
+  '0x943469fffe6457b6':
+    friendly_name: entree_lux_ikestoft_gould
+  '0x001788010862ffd2':
+    friendly_name: toilet_sen_huemulti_turing
+  '0x001788010bb53f7b':
+    friendly_name: toilet_lux_huespot_templeton
+  '0x001788010bb53f81':
+    friendly_name: toilet_lux_huespot_taylor
+  '0x001788010bb534ab':
+    friendly_name: toilet_lux_huespot_thompson
+  '0x0017880106f57744':
+    friendly_name: keuken_sen_huemulti_halley
+  '0x30fb10fffe22e10a':
+    friendly_name: keuken_lux_ikestoft_yotam
+  '0x0017880106f54afa':
+    friendly_name: bijkkn_sen_huemulti_bernerslee
+  '0x2c1165fffe3008c8':
+    friendly_name: voortn_lux_ikebulb_maybach
+  '0x001788010cd66406':
+    friendly_name: zolder_sen_huemulti_vanrossum
+  '0x001788010329fc00':
+    friendly_name: entree_sen_huemulti_babbage
+  '0x000d6ffffe07e331':
+    friendly_name: bijkkn_lux_ikepanel_marconi
+  '0x04cd15fffe789900':
+    friendly_name: wrkmr1_lux_livdesk_brush
+  '0x84ba20fffe830e15':
+    friendly_name: wrkmr1_lux_livfloor_gilbert
+  '0x0017880106fc8a23':
+    friendly_name: achttn_lux_huewall_maiman
+  '0x00178801064489db':
+    friendly_name: achttn_sen_huemultioutdoor_bell
+  '0xbc33acfffe7428e6':
+    friendly_name: '0xbc33acfffe7428e6'
+blocklist: []
+groups:
+  '1':
+    friendly_name: wrkmr1

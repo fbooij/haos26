@@ -1,0 +1,26 @@
+mqtt:
+  server: mqtt://core-mosquitto:1883
+  user: addons
+  password: thai1abeiM8Apahth5eereez5dooquaa5oojoangeedei9Einiesh1Faijeija6j
+serial:
+  port: /dev/ttyACM1
+  adapter: deconz
+frontend:
+  port: 8099
+devices:
+  '0x04cf8cdf3c89f257':
+    friendly_name: tesla
+  '0x04cf8cdf3c89e786':
+    friendly_name: watt
+  '0x54ef4410000fed29':
+    friendly_name: galvani
+  '0x8cf681fffe4de7a0':
+    friendly_name: pascal
+  '0x00158d0002c9cde2':
+    friendly_name: stoletov
+  '0x385b44fffe1a2d1b':
+    friendly_name: ockham
+  '0x00158d00031b46fb':
+    friendly_name: carson
+  '0xd0cf5efffeb43eeb':
+    friendly_name: '0xd0cf5efffeb43eeb'

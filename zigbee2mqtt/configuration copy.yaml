@@ -98,6 +98,8 @@ devices:
     friendly_name: huberman
   '0xf0d1b8be24086922':
     friendly_name: buiten_pow_ledsock_stroustrup
+  '0x00178801032a158f':
+    friendly_name: wrkmr1_sen_huemulti_copernicus
   '0x001788010b9dad70':
     friendly_name: zitkmr_lux_hueorb_swainson
   '0x0017880104cdc863':
@@ -255,9 +257,3 @@ devices:
     friendly_name: wingquist
   '0x0c4314fffeec88cd':
     friendly_name: '0x0c4314fffeec88cd'
-  '0x00178801032a158f':
-    friendly_name: wrkmr1_sen_huemulti_copernicus
-  '0x04cd15fffe81741e':
-    friendly_name: '0x04cd15fffe81741e'
-  '0xdc8e95fffe8e9283':
-    friendly_name: '0xdc8e95fffe8e9283'
