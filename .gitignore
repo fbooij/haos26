@@ -29,5 +29,5 @@ html5_push_registrations.conf
 ip_bans.yaml
 known_devices.yaml
 secrets.yaml
-state.json
 # .storage/ is already ignored from the first line, no need to restate it here
+zigbee2mqtt/state.json
