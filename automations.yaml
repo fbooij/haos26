@@ -120,8 +120,9 @@
       motion_trigger:
       - binary_sensor.pantry_occupancy
       light_switch:
-        entity_id: light.z2m_pantry_lux_group
-      time_delay: 1
+        entity_id:
+        - light.z2m_pantry_lux_group
+      time_delay: 2
 - id: '1741098879096'
   alias: sensor light overlp
   description: ''
