@@ -250,8 +250,7 @@
       ambient_light_value: 10
       ambient_light_high_value: 50
       light_switch:
-        entity_id:
-        - light.z2m_sauna_virtual_lux_group
+        entity_id: light.z2m_sauna_virtual_lux_group
       time_delay: 15
 - id: '1748288187441'
   alias: sensor light kelder
@@ -312,3 +311,88 @@
       entity_id: light.z2m_wrkmr1_lux_group
     action: light.turn_off
   mode: single
+- id: '1755367175029'
+  alias: sensor light achttn dorset
+  description: ''
+  use_blueprint:
+    path: Blackshome/sensor-light.yaml
+    input:
+      motion_trigger:
+      - binary_sensor.achttn_sen_huemultioutdoor_herschel_occupancy
+      light_switch:
+        entity_id: light.achttn_lux_osrled_dorset
+      time_delay: 1
+      include_ambient: ambient_enabled
+      ambient_light_sensor: sensor.achttn_sen_huemultioutdoor_herschel_illuminance
+      ambient_light_options: ambient_light_option_enabled
+      ambient_light_value: 10
+      ambient_light_high_value: 30
+
+- id: sensor_light_zitkmr_override_active
+  alias: sensor light zitkmr override active
+  description: ''
+  triggers:
+  - entity_id: binary_sensor.r25_hdmi_control_4dde92_tv_on
+    to: 'on'
+    for:
+      seconds: 5
+    trigger: state
+  - event: start
+    trigger: homeassistant
+  conditions:
+  - condition: state
+    entity_id: binary_sensor.r25_hdmi_control_4dde92_tv_on
+    state: 'on'
+  actions:
+  - condition: numeric_state
+    entity_id: sensor.zitkmr_sen_huemulti_celcius_illuminance
+    below: 220
+  - action: light.turn_on
+    target:
+      entity_id: light.z2m_zitkmr_lux_group
+  - action: automation.turn_off
+    target:
+      entity_id: automation.sensor_light_zitkmr
+  mode: single
+
+- id: sensor_light_zitkmr_override_inactive
+  alias: sensor light zitkmr override inactive
+  mode: single
+  trigger:
+    - trigger: state
+      entity_id: binary_sensor.r25_hdmi_control_4dde92_tv_on
+      to: "off"
+      for:
+        seconds: 5
+    - trigger: homeassistant
+      event: start
+  condition:
+    - condition: state
+      entity_id: binary_sensor.r25_hdmi_control_4dde92_tv_on
+      state: "off"
+  action:
+    - action: automation.turn_on
+      target:
+        entity_id: automation.sensor_light_zitkmr
+
+    # Optional soft-off after handover:
+    - wait_for_trigger:
+        - trigger: state
+          entity_id: binary_sensor.zitkmr_sen_huemulti_celcius_occupancy
+          to: "off"
+          for:
+            seconds: 15
+      timeout:
+        minutes: 2
+      continue_on_timeout: true
+    - condition: and
+      conditions:
+        - condition: state
+          entity_id: binary_sensor.zitkmr_sen_huemulti_celcius_occupancy
+          state: "off"
+        - condition: numeric_state
+          entity_id: sensor.zitkmr_sen_huemulti_celcius_illuminance
+          above: 220
+    - action: light.turn_off
+      target:
+        entity_id: light.z2m_zitkmr_lux_group

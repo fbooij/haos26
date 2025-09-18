@@ -13,7 +13,7 @@
 
 - name: "service"
   lights:
-    - light.z2m_overlp_lux_group
+    # - light.z2m_overlp_lux_group
     - light.z2m_bijkkn_lux_group
   prefer_rgb_color: false
   transition: 45
@@ -22,6 +22,23 @@
   min_brightness: 50
   max_brightness: 100
   sleep_brightness: 25
+  max_sunrise_time: "05:30:00" # was 0630 (13/11/2025)
+  take_over_control: true
+  detect_non_ha_changes: true
+  autoreset_control_seconds: 900
+  only_once: false
+
+- name: "overlp"
+  lights:
+    - light.z2m_overlp_lux_group
+    # - light.z2m_bijkkn_lux_group
+  prefer_rgb_color: false
+  transition: 45
+  initial_transition: 1
+  interval: 90
+  min_brightness: 5
+  max_brightness: 100
+  sleep_brightness: 5
   max_sunrise_time: "05:30:00" # was 0630 (13/11/2025)
   take_over_control: true
   detect_non_ha_changes: true
@@ -115,7 +132,7 @@
 
 - name: "entree"
   lights:
-    - light.z2m_entree_lux_group
+    - light.entree_lux_huebeing_coolidge
   prefer_rgb_color: false
   transition: 45
   initial_transition: 1
@@ -125,6 +142,24 @@
   sleep_brightness: 10
   min_color_temp: 3000
   max_color_temp: 4500
+  take_over_control: true
+  detect_non_ha_changes: true
+  autoreset_control_seconds: 900
+  only_once: false
+
+- name: "entree_livled"
+  lights:
+    - light.entree_lux_livled_daniels
+    - light.entree_lux_livled_jameson
+  prefer_rgb_color: false
+  transition: 45
+  initial_transition: 1
+  interval: 90
+  min_brightness: 25
+  max_brightness: 75
+  sleep_brightness: 10
+  min_color_temp: 2000
+  max_color_temp: 3500 # max = 6535
   take_over_control: true
   detect_non_ha_changes: true
   autoreset_control_seconds: 900
@@ -141,6 +176,22 @@
   min_brightness: 20
   max_brightness: 80
   sleep_brightness: 10
+  take_over_control: true
+  detect_non_ha_changes: true
+  autoreset_control_seconds: 900
+  only_once: false
+
+- name: "dorset"
+  lights:
+    - light.achttn_lux_osrled_dorset
+  prefer_rgb_color: false
+  transition: 45
+  initial_transition: 1
+  interval: 90
+  min_brightness: 50
+  max_brightness: 100
+  min_color_temp: 2000
+  max_color_temp: 6666
   take_over_control: true
   detect_non_ha_changes: true
   autoreset_control_seconds: 900

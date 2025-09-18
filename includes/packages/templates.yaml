@@ -1,6 +1,6 @@
 light:
   - platform: switch
-    name: z2m_sauna_virtual_lux_group
+    name: z2m_sauna_lux_group
     entity_id: switch.sauna_pow_ledsock_stroustrup
     
 template:
