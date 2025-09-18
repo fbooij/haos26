@@ -1,13 +1,13 @@
 {
     "1": {
         "state": "ON",
-        "brightness": 132,
+        "brightness": 129,
         "color_mode": "color_temp",
         "color_temp": 454
     },
     "2": {
         "state": "ON",
-        "brightness": 132,
+        "brightness": 129,
         "color_mode": "color_temp",
         "color_temp": 454
     },
@@ -125,7 +125,7 @@
         },
         "linkquality": 163,
         "state": "ON",
-        "brightness": 132,
+        "brightness": 129,
         "color_mode": "color_temp",
         "color_temp": 454,
         "last_seen": "2025-09-05T14:32:15+02:00"
@@ -149,7 +149,7 @@
         },
         "linkquality": 149,
         "state": "ON",
-        "brightness": 132,
+        "brightness": 129,
         "color_mode": "color_temp",
         "color_temp": 454,
         "last_seen": "2025-09-05T14:34:28+02:00"
@@ -162,7 +162,7 @@
         },
         "linkquality": 134,
         "state": "ON",
-        "brightness": 132,
+        "brightness": 129,
         "color_mode": "color_temp",
         "color_temp": 454,
         "last_seen": "2025-09-05T14:25:57+02:00"
@@ -494,7 +494,7 @@
         "last_seen": "2025-09-05T14:26:03+02:00"
     },
     "0x04cf8cdf3c89e786": {
-        "device_temperature": 18,
+        "device_temperature": 17,
         "power_outage_count": 5,
         "state": "OFF",
         "voltage": 224,
@@ -582,7 +582,7 @@
     },
     "0x00158d0003498551": {
         "temperature": 17.55,
-        "humidity": 80.04,
+        "humidity": 79.76,
         "pressure": 1018.8,
         "voltage": 2955,
         "battery": 70,
@@ -848,7 +848,7 @@
     "0x0017880102dee36a": {
         "state": "ON",
         "linkquality": 98,
-        "brightness": 132,
+        "brightness": 129,
         "color_mode": "color_temp",
         "color_temp": 454,
         "update": {
@@ -861,7 +861,7 @@
     "0x0017880102b06a0b": {
         "state": "ON",
         "linkquality": 72,
-        "brightness": 132,
+        "brightness": 129,
         "color_mode": "color_temp",
         "color_temp": 454,
         "update": {
@@ -1149,12 +1149,12 @@
         "last_seen": "2025-09-05T14:35:53+02:00"
     },
     "0xe0798dfffed1b802": {
-        "linkquality": 72,
+        "linkquality": 76,
         "last_seen": "2025-09-02T20:31:18+02:00"
     },
     "0xffffb40e06059575": {
-        "temperature": 17.64,
-        "humidity": 53.36,
+        "temperature": 17.53,
+        "humidity": 53.27,
         "battery": 88.5,
         "linkquality": 58,
         "update": {
@@ -1162,11 +1162,11 @@
             "installed_version": 46,
             "latest_version": 46
         },
-        "soil_moisture": 53.36,
+        "soil_moisture": 53.27,
         "last_seen": "2025-09-02T20:28:16+02:00"
     },
     "0xffffb40e060596cd": {
-        "temperature": 20.8,
+        "temperature": 20.6,
         "humidity": 40.75,
         "battery": 86,
         "linkquality": 58,
@@ -1192,9 +1192,9 @@
         "last_seen": "2025-09-02T20:28:47+02:00"
     },
     "0x00158d000af3945f": {
-        "temperature": 17.26,
-        "humidity": 99.77,
-        "pressure": 1020.2,
+        "temperature": 17.08,
+        "humidity": 99.87,
+        "pressure": 1019.9,
         "linkquality": 47,
         "voltage": 2995,
         "battery": 97,
