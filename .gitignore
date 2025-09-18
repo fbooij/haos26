@@ -29,3 +29,7 @@ html5_push_registrations.conf
 ip_bans.yaml
 known_devices.yaml
 secrets.yaml
+zigbee2mqtt/database.db
+zigbee2mqtt/state.json
+zigbee2mqtt/coordinator_backup.json
+zigbee2mqtt/logs/
